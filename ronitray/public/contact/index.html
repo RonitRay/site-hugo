@@ -38,23 +38,17 @@
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
-
-  :root{
-    --accent-color: rgb(112, 229, 245);
-  }
-
   body {
-    font-family: monospace;
+    font-family: Verdana, sans-serif;
     margin: auto;
     padding: 20px;
     max-width: 720px;
     text-align: left;
-    background-color: rgb(26, 26, 26);
+    background-color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
-    color: white;
-    font-size: 1.1em;
+    color: #444;
   }
 
   h1,
@@ -62,29 +56,20 @@
   h3,
   h4,
   h5,
-  h6 {
-    color: var(--accent-color);
+  h6,
+  strong,
+  b {
+    color: #222;
   }
 
-  a, a:visited {
+  a {
+    color: #3273dc;
      
-     
-    color: var(--accent-color) !important;
-    text-decoration: none !important;
-    padding: 0 0 2px 0;
-    border-bottom: 1px solid var(--accent-color);
   }
-
 
   .title {
-     
-    border-bottom: 1px solid var(--accent-color) !important;  
-    border: 0;    
-  }
-
-  .title span{
-    font-size: 1.4em;
-    font-weight: bold !important;
+    text-decoration: none;
+    border: 0;
   }
 
   .title span {
@@ -118,11 +103,11 @@
 
   code {
     padding: 2px 5px;
-    background-color: rgb(41, 41, 41);
+    background-color: #f2f2f2;
   }
 
   pre code {
-    color: #fff;
+    color: #222;
     display: block;
     padding: 20px;
     white-space: pre-wrap;
@@ -141,7 +126,7 @@
 
   blockquote {
     border-left: 1px solid #999;
-    color: var(--accent-color);
+    color: #222;
     padding-left: 20px;
     font-style: italic;
   }
@@ -169,7 +154,6 @@
 
   ul.blog-posts li {
     display: flex;
-    margin: 15px 0;
   }
 
   ul.blog-posts li span {
@@ -229,22 +213,15 @@
 </head>
 
 <body>
-  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
-  <span>Ronit Ray</span>
+  <header><a href="/" class="title">
+  <h2>Ronit Ray</h2>
 </a>
-<nav>
+<nav><a href="/">Home</a>
+
+
 </nav>
 </header>
   <main>
-
-<h1>Contact Me</h1>
-<p>
-  <i>
-    <time datetime='2021-02-09' pubdate>
-      2021-02-09
-    </time>
-  </i>
-</p>
 
 <content>
   <p>You may contact me via:</p>
@@ -317,12 +294,8 @@ ZL9sPpTrhA==
 </p>
 
   </main>
-  <footer><hr>
-<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
-    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
-    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
-        ʕ•ᴥ•ʔ Bear</a>
-</i></footer>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
 
     
 </body>
