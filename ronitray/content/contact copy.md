@@ -1,6 +1,6 @@
 +++
 title= "Contact Me"
-date= 2021-02-09 
+date= 2027-02-09 
 description= "Get in touch with me."
 [extra]
 listed=false
@@ -11,6 +11,26 @@ You may contact me via:
 1. [Email (PGP available)](#email)
 2. [Social Media](#social-media)
 
+
+## Form
+
+Please fill in the form below. I check responses **every Friday.**
+
+Full disclosure: I use Netlify Forms for this feature. If you are not comfortable with that or prefer more privacy, I recommend [sending me a PGP-encrypted email](#email).
+
+<form name="contact" method="POST" netlify>
+  <p>
+    <label>Name:<br> <input type="text" name="name" style="padding:10px;font-size:20px;width:90%"></label>   
+  </p>
+  <p>
+    <label>Email:<br> <input type="email" name="email" style="padding:10px;font-size:20px;width:90%"></label><br>
+  </p>  
+    <label>Message:<br> <textarea name="message" style="padding:10px;font-size:20px;width:90%"></textarea></label><br>
+  </p>
+  <p>
+    <button type="submit" style="font-size:20px;width:90%;background:#111; color: white;padding:10px;cursor:pointer">SEND</button>
+  </p>
+</form>
 
 ## Email
 
