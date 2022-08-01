@@ -1,0 +1,3 @@
+[submodule "ronitray/themes/hugo-bearblog"]
+	path = ronitray/themes/hugo-bearblog
+	url = https://github.com/janraasch/hugo-bearblog.git
