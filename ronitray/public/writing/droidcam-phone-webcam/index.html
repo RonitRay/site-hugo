@@ -1,271 +1,45 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
+<!doctype html><html lang=en-us>
 <head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
-<title>How to Use Your Phone as a Webcam | Ronit Ray</title>
-<meta name="title" content="How to Use Your Phone as a Webcam" />
-<meta name="description" content="You don&#39;t need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam." />
-<meta name="keywords" content="" />
-
-
-<meta property="og:title" content="How to Use Your Phone as a Webcam" />
-<meta property="og:description" content="You don&#39;t need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ronitray.xyz/writing/droidcam-phone-webcam/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
-<meta property="article:published_time" content="2021-03-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-14T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
-
-
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
-
-<meta name="twitter:title" content="How to Use Your Phone as a Webcam"/>
-<meta name="twitter:description" content="You don&#39;t need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam."/>
-
-
-
-<meta itemprop="name" content="How to Use Your Phone as a Webcam">
-<meta itemprop="description" content="You don&#39;t need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam."><meta itemprop="datePublished" content="2021-03-14T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-03-14T00:00:00+00:00" />
-<meta itemprop="wordCount" content="338"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
-<meta itemprop="keywords" content="" />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-
-  :root{
-    --accent-color: rgb(112, 229, 245);
-  }
-
-  body {
-    font-family: monospace;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: rgb(26, 26, 26);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: white;
-    font-size: 1.1em;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--accent-color);
-  }
-
-  a, a:visited {
-     
-     
-    color: var(--accent-color) !important;
-    text-decoration: none !important;
-    padding: 0 0 2px 0;
-    border-bottom: 1px solid var(--accent-color);
-  }
-
-
-  .title {
-     
-    border-bottom: 1px solid var(--accent-color) !important;  
-    border: 0;    
-  }
-
-  .title span{
-    font-size: 1.4em;
-    font-weight: bold !important;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: rgb(41, 41, 41);
-  }
-
-  pre code {
-    color: #fff;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: var(--accent-color);
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-    margin: 15px 0;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-
-</head>
-
-<body>
-  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
-  <span>Ronit Ray</span>
+<meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href=https://ronitray.xyz/images/favicon.png>
+<title>How to Use Your Phone as a Webcam | Ronit Ray</title><meta name=title content="How to Use Your Phone as a Webcam">
+<meta name=description content="You don't need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam.">
+<meta name=keywords content>
+<meta property="og:title" content="How to Use Your Phone as a Webcam">
+<meta property="og:description" content="You don't need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ronitray.xyz/writing/droidcam-phone-webcam/"><meta property="og:image" content="https://ronitray.xyz/images/share.png"><meta property="article:section" content="writing">
+<meta property="article:published_time" content="2021-03-14T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-03-14T00:00:00+00:00"><meta property="og:site_name" content="Ronit Ray">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://ronitray.xyz/images/share.png">
+<meta name=twitter:title content="How to Use Your Phone as a Webcam">
+<meta name=twitter:description content="You don't need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam.">
+<meta itemprop=name content="How to Use Your Phone as a Webcam">
+<meta itemprop=description content="You don't need a webcam. Use your Android or iOS device to get much better video and audio quality with Droidcam."><meta itemprop=datePublished content="2021-03-14T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-03-14T00:00:00+00:00">
+<meta itemprop=wordCount content="338"><meta itemprop=image content="https://ronitray.xyz/images/share.png">
+<meta itemprop=keywords content>
+<meta name=referrer content="no-referrer-when-downgrade">
+<style>:root{--accent-color:rgb(112, 229, 245)}body{font-family:monospace;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#1a1a1a;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#fff;font-size:1.1em}h1,h2,h3,h4,h5,h6{color:var(--accent-color)}a,a:visited{color:var(--accent-color)!important;text-decoration:none!important;padding:0 0 2px;border-bottom:1px solid var(--accent-color)}.title{border-bottom:1px solid var(--accent-color)!important;border:0}.title span{font-size:1.4em;font-weight:700!important}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#292929}pre code{color:#fff;display:block;padding:20px;white-space:pre-wrap;font-size:14px}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:var(--accent-color);padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex;margin:15px 0}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}</style></head><body>
+<header><a href=/ class=title style="border-bottom:1px solid var(--accent-color)">
+<span>Ronit Ray</span>
 </a>
 <nav>
-</nav>
-</header>
-  <main>
-
-<h1>How to Use Your Phone as a Webcam</h1>
+</nav></header><main>
+<h1>How to Use Your Phone as a Webcam</h1><p>
+<i>
+<time datetime=2021-03-14 pubdate>
+2021-03-14
+</time>
+</i>
+</p><content>
+<p>I had an interview this week. Of course, the pandemic still looming over our heads meant that this was to be virtual rather than in-person. Videocalls are really not part of my workflow; I&rsquo;m more of a text-oriented person. Even work-related discussion is usually limited to voice chat. The integrated webcam on my laptop was already pretty crummy, and five years of having tape on it probably didn&rsquo;t do the quality any favours. Not to mention the microphone, which sounds like the inside of a locomotive from the 19th century for some reason. I should probably look into that.</p><p>What I&rsquo;m trying to say, is that I needed to set up a video call and my laptop didn&rsquo;t have the hardware for it. The pandemic has made prices for webcams surge by 30-100%, and I don&rsquo;t have the means or the inclination to participate in this inflated market. Sure, phones can handle calling pretty well, but it&rsquo;s still a tiny screen and the ergonomics of the whole thing are iffy. It would be better if I could somehow use my phone&rsquo;s rear camera and microphone as input to my PC.</p><p>Surprise surprise, this is possible and really easy to set up. <a href=https://github.com/dev47apps/droidcam>Droidcam</a> is a free (as in beer AND freedom) utility that does exactly this. It&rsquo;s available on Linux and Windows, and works with Android and iOS devices. The operation is pretty much plug and play, and you can use it over wireless LAN or USB. It takes a little tinkering to set up custom resolutions and/or audio input on Linux, but it&rsquo;s very minor, and the result is great quality video and somewhat acceptable audio. For some reason even premium laptops in 2021 ship with terrible webcams, so even your midrange phone likely still boasts a significantly better rear camera.</p><p>The video interview went through without any major hitches. Droidcam is a game changer- it opens up a lot of avenues, and for the first time I&rsquo;m actually looking forward to bringing video conversations into my life.</p></content>
 <p>
-  <i>
-    <time datetime='2021-03-14' pubdate>
-      2021-03-14
-    </time>
-  </i>
-</p>
-
-<content>
-  <p>I had an interview this week. Of course, the pandemic still looming over our heads meant that this was to be virtual rather than in-person. Videocalls are really not part of my workflow; I&rsquo;m more of a text-oriented person. Even work-related discussion is usually limited to voice chat. The integrated webcam on my laptop was already pretty crummy, and five years of having tape on it probably didn&rsquo;t do the quality any favours. Not to mention the microphone, which sounds like the inside of a locomotive from the 19th century for some reason. I should probably look into that.</p>
-<p>What I&rsquo;m trying to say, is that I needed to set up a video call and my laptop didn&rsquo;t have the hardware for it. The pandemic has made prices for webcams surge by 30-100%, and I don&rsquo;t have the means or the inclination to participate in this inflated market. Sure, phones can handle calling pretty well, but it&rsquo;s still a tiny screen and the ergonomics of the whole thing are iffy. It would be better if I could somehow use my phone&rsquo;s rear camera and microphone as input to my PC.</p>
-<p>Surprise surprise, this is possible and really easy to set up. <a href="https://github.com/dev47apps/droidcam">Droidcam</a> is a free (as in beer AND freedom) utility that does exactly this. It&rsquo;s available on Linux and Windows, and works with Android and iOS devices. The operation is pretty much plug and play, and you can use it over wireless LAN or USB. It takes a little tinkering to set up custom resolutions and/or audio input on Linux, but it&rsquo;s very minor, and the result is great quality video and somewhat acceptable audio. For some reason even premium laptops in 2021 ship with terrible webcams, so even your midrange phone likely still boasts a significantly better rear camera.</p>
-<p>The video interview went through without any major hitches. Droidcam is a game changer- it opens up a lot of avenues, and for the first time I&rsquo;m actually looking forward to bringing video conversations into my life.</p>
-
-</content>
-<p>
-  
-</p>
-
-  </main>
-  <footer><hr>
-<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
-    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
-    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
-        ʕ•ᴥ•ʔ Bear</a>
-</i></footer>
-
-    
-</body>
-
-</html>
+</p></main><footer><hr>
+<i style=line-height:0>Copyright © 2020-2022, Ronit Ray.<br>
+<p>Licenses: CC BY-SA (content), MIT (code). <a href=/license>Read the license notice.</a></p>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo
+ʕ•ᴥ•ʔ Bear</a>
+</i></footer></body></html>

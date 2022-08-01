@@ -1,302 +1,47 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
+<!doctype html><html lang=en-us>
 <head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
-<title>What I&#39;m Doing to Improve this Site&#39;s Accessibility | Ronit Ray</title>
-<meta name="title" content="What I&#39;m Doing to Improve this Site&#39;s Accessibility" />
-<meta name="description" content="Accessibility needs to be a core tenet for the internet." />
-<meta name="keywords" content="" />
-
-
-<meta property="og:title" content="What I&#39;m Doing to Improve this Site&#39;s Accessibility" />
-<meta property="og:description" content="Accessibility needs to be a core tenet for the internet." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ronitray.xyz/writing/site-accessibility/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
-<meta property="article:published_time" content="2021-03-07T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-07T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
-
-
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
-
-<meta name="twitter:title" content="What I&#39;m Doing to Improve this Site&#39;s Accessibility"/>
-<meta name="twitter:description" content="Accessibility needs to be a core tenet for the internet."/>
-
-
-
-<meta itemprop="name" content="What I&#39;m Doing to Improve this Site&#39;s Accessibility">
-<meta itemprop="description" content="Accessibility needs to be a core tenet for the internet."><meta itemprop="datePublished" content="2021-03-07T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-03-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1234"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
-<meta itemprop="keywords" content="" />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-
-  :root{
-    --accent-color: rgb(112, 229, 245);
-  }
-
-  body {
-    font-family: monospace;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: rgb(26, 26, 26);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: white;
-    font-size: 1.1em;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--accent-color);
-  }
-
-  a, a:visited {
-     
-     
-    color: var(--accent-color) !important;
-    text-decoration: none !important;
-    padding: 0 0 2px 0;
-    border-bottom: 1px solid var(--accent-color);
-  }
-
-
-  .title {
-     
-    border-bottom: 1px solid var(--accent-color) !important;  
-    border: 0;    
-  }
-
-  .title span{
-    font-size: 1.4em;
-    font-weight: bold !important;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: rgb(41, 41, 41);
-  }
-
-  pre code {
-    color: #fff;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: var(--accent-color);
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-    margin: 15px 0;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-
-</head>
-
-<body>
-  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
-  <span>Ronit Ray</span>
+<meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href=https://ronitray.xyz/images/favicon.png>
+<title>What I'm Doing to Improve this Site's Accessibility | Ronit Ray</title><meta name=title content="What I'm Doing to Improve this Site's Accessibility">
+<meta name=description content="Accessibility needs to be a core tenet for the internet.">
+<meta name=keywords content>
+<meta property="og:title" content="What I'm Doing to Improve this Site's Accessibility">
+<meta property="og:description" content="Accessibility needs to be a core tenet for the internet.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ronitray.xyz/writing/site-accessibility/"><meta property="og:image" content="https://ronitray.xyz/images/share.png"><meta property="article:section" content="writing">
+<meta property="article:published_time" content="2021-03-07T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-03-07T00:00:00+00:00"><meta property="og:site_name" content="Ronit Ray">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://ronitray.xyz/images/share.png">
+<meta name=twitter:title content="What I'm Doing to Improve this Site's Accessibility">
+<meta name=twitter:description content="Accessibility needs to be a core tenet for the internet.">
+<meta itemprop=name content="What I'm Doing to Improve this Site's Accessibility">
+<meta itemprop=description content="Accessibility needs to be a core tenet for the internet."><meta itemprop=datePublished content="2021-03-07T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-03-07T00:00:00+00:00">
+<meta itemprop=wordCount content="1234"><meta itemprop=image content="https://ronitray.xyz/images/share.png">
+<meta itemprop=keywords content>
+<meta name=referrer content="no-referrer-when-downgrade">
+<style>:root{--accent-color:rgb(112, 229, 245)}body{font-family:monospace;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#1a1a1a;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#fff;font-size:1.1em}h1,h2,h3,h4,h5,h6{color:var(--accent-color)}a,a:visited{color:var(--accent-color)!important;text-decoration:none!important;padding:0 0 2px;border-bottom:1px solid var(--accent-color)}.title{border-bottom:1px solid var(--accent-color)!important;border:0}.title span{font-size:1.4em;font-weight:700!important}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#292929}pre code{color:#fff;display:block;padding:20px;white-space:pre-wrap;font-size:14px}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:var(--accent-color);padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex;margin:15px 0}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}</style></head><body>
+<header><a href=/ class=title style="border-bottom:1px solid var(--accent-color)">
+<span>Ronit Ray</span>
 </a>
 <nav>
-</nav>
-</header>
-  <main>
-
-<h1>What I&#39;m Doing to Improve this Site&#39;s Accessibility</h1>
+</nav></header><main>
+<h1>What I'm Doing to Improve this Site's Accessibility</h1><p>
+<i>
+<time datetime=2021-03-07 pubdate>
+2021-03-07
+</time>
+</i>
+</p><content>
+<p>One of the things I&rsquo;ve had on my mind from the very beginning for this site is accessibility. I don&rsquo;t expect huge viewership now or ever, but making the content accessible to as many users as possible is something I greatly value and want to achieve. The internet wasn&rsquo;t built for a handful of people who have perfect eyesight and gigabit internet, and I&rsquo;m not going to let my site be reduced to that. Accessibility should not be a luxury or a secondary concern. It needs to be a first-class citizen of every website if we want the web to truly be the open paradise for everyone it was envisioned to be.</p><p>Here&rsquo;s what I&rsquo;m doing to this end.</p><h3 id=speed>Speed</h3><p>This site is as light and fast as I&rsquo;ve been able to make it. Static pages. &lt;1.5 KB of CSS. Zero JavaScript. The entire site is (as of today) under 250KB, and no individual page is larger than 17kB. I&rsquo;m serving it through <a href=https://netlify.com>Netlify</a>, and their CDNs are more than adequate for static sites. I&rsquo;m working on minimizing the footprint further, but short of plaintext served via, say, <a href=https://en.wikipedia.org/wiki/Gopher_(protocol)>gopher</a> or <a href=https://gemini.circumlunar.space/>gemini</a>, I think this is fairly light and loads quick enough even on 2G cell data.</p><h3 id=contrast>Contrast</h3><p>I&rsquo;ve implemented the prefers-color-scheme media query in my CSS to present a light or dark themed site based on the user&rsquo;s existing preference (typically read from their phone theme or desktop theme or browser flag). For light mode, it is black text on a white background. Not the most exciting thing in the world but it&rsquo;s as readable as can be. I&rsquo;ve preferred dark mode in a lot of my personal applications but serving only white text on black can be pretty jarring for a lot of people, and grey text comes at the cost of reducing contrast and general readability for visually impaired users if it is the only option available. I haven&rsquo;t come across a convincing way to implement a dark mode toggle without JS, which is why I haven&rsquo;t given the explicit option.</p><h3 id=general-readability>General Readability</h3><p>On desktop, the content is centered and will cover 50% of the screen width,which translates to roughly 70-85 characters per line depending on the size of your monitor. This goes up to 90% on portrait displays (like phones) to minimize wastage of limited vertical real estate. There is just enough of a margin to ensure content doesn&rsquo;t overflow for phones with silly curved displays and leave room for swipe based gestures. I&rsquo;m using 1.125em font size (translates to 18pt on <em>most</em> browsers by default); I think it is fairly large for those who need it without being too huge for those who don&rsquo;t. The site is fully zoom-compatible, so text sizes can be changed without hassle using your browser&rsquo;s zoom functionality. I&rsquo;ve opted for a line height (spacing) of 1.5 as well. I don&rsquo;t (and won&rsquo;t) use all caps or justified alignment.</p><h3 id=font>Font</h3><p>I&rsquo;m sticking to sans serif fonts with high availability and generally clean typefaces. I&rsquo;m also looking at slab fonts because they&rsquo;re the most attractive to me, but I&rsquo;m not sure how legible or accessible they are in general. I wasn&rsquo;t able to find any definitive source on the most accessible fonts. The ones that market themselves as being specifically designed for visually impaired users tend to have the following issues.</p><ol>
+<li>Convoluted commercial licenses, which I can&rsquo;t afford to use and am opposed to in general.</li><li>Lack of availability, as in they are unlikely to be installed on the vast majority of systems. Would need to be embedded with the site, increasing the size of each page by at least 100kb.</li><li>From what I understand, these also tend to be not-as-good for general use (OpenDyslexic for example seems to be difficult to read for me) or for people suffering from disabilities other than the one they target, and the data proving their efficacy is a little scarce, although that can well be attributed to the general lack of data for people with disabilities.</li></ol><h3 id=links>Links</h3><p>If you visited my site earlier this month you might recall that the text was all-black. The links were the same color as the text, with only the underline to distinguish them. I still really like the look, especially when it is done well on blogs like those maintained by <a href=https://macwright.com>Tom MacWright</a> and <a href=https://jlelse.dev>Jan-Lukas Else</a>, for instance. But with my shoddy CSSwork it just didn&rsquo;t look right.</p><ol>
+<li>Data strongly also suggests that users associate blue with links because it is the default choice in HTML, and has good contrast with black or white text. It also provides another critical factor to distinguish links from the rest of the text content. I didn&rsquo;t like the default blue choice for HTML, so I&rsquo;ve gone for a more mellow #0d47a1 (light mode) and #4bbaff (dark mode) instead.</li><li>Now, one thing I absolutely hate is underlines on links, because for letters which have descenders/tails that go below the line, the underline goes right through them and the result is really ugly. Underlines are important though, especially if your visitor isn&rsquo;t able to clearly distinguish your link color from the other elements. To avoid this, I&rsquo;ve removed underlines and gone for a 1px bottom border instead, which is drawn below the descender. I think that is an acceptable compromise.</li></ol><h3 id=screen-reader-compliance>Screen Reader Compliance</h3><p>I&rsquo;ve kept all formatting as basic and standard as possible, and there are no convoluted maneuvers that will interfere with screen readers. I&rsquo;ve tested this with Microsoft Narrator and it works fine.</p><p>It&rsquo;s worth remembering that aside from images having alt tags, it is also important for your tables to have alt tags for each column as this allows the screen reader to describe the column before talking about the data in it. I&rsquo;ve only got tables on one page (Library) right now, but that follows this already.</p><p>I&rsquo;m using HTML5 semantic elements like header, nav, section, footer etc as well. I&rsquo;ve also kept a lang=en on the html declaration which I&rsquo;ve read helps screen readers parse the content.</p><h3 id=alt-text-on-images>Alt text on Images</h3><p>This is important not only for screen readers but also for people in poorly connected areas who are unable to load anything beyond the text content. It also helps years down the line if you are linking to external images that may not be there. The link may break but your alt text is there to stay.</p><h3 id=css-and-mouse-independence-and-terminal-based-browsers>CSS and Mouse Independence and Terminal Based Browsers</h3><p>The site looks fine without loading the CSS file. I don&rsquo;t rely on any fancy CSS shenanigans, mostly because I don&rsquo;t know or need them. I&rsquo;m a big fan of terminal-based browsers, and have checked the site with links, lynx, and w3m. Looks pretty good, if I may say so. I don&rsquo;t hijack clicks or scrolling so users are free to navigate using their keyboard.</p><h3 id=proper-html-structure>Proper HTML Structure</h3><p>I use very basic HTML structure in my Jinja templates but adhere to all the hits: semantic elements, ordered heading tags, alt text, meta descriptions and so on.</p><h3 id=forms>Forms</h3><p>I only have one form on this site for the contact page, and it is very basic. It is labelled and visible.</p><h3 id=concluding>Concluding</h3><p>If you are looking to implement accessibility features on their site can refer to <a href=https://dotcms.com/blog/post/website-accessibility-checklist-10-steps-towards-website-compliance>DotCMS&rsquo;s excellent accessibility checklist</a> or <a href=https://websitesetup.org/web-accessibility-checklist/>another great guide from websitesetup.org</a>. If you have any suggestions for how I can improve accessibility, please <a href=/contact>contact me.</a></p></content>
 <p>
-  <i>
-    <time datetime='2021-03-07' pubdate>
-      2021-03-07
-    </time>
-  </i>
-</p>
-
-<content>
-  <p>One of the things I&rsquo;ve had on my mind from the very beginning for this site is accessibility. I don&rsquo;t expect huge viewership now or ever, but making the content accessible to as many users as possible is something I greatly value and want to achieve. The internet wasn&rsquo;t built for a handful of people who have perfect eyesight and gigabit internet, and I&rsquo;m not going to let my site be reduced to that. Accessibility should not be a luxury or a secondary concern. It needs to be a first-class citizen of every website if we want the web to truly be the open paradise for everyone it was envisioned to be.</p>
-<p>Here&rsquo;s what I&rsquo;m doing to this end.</p>
-<h3 id="speed">Speed</h3>
-<p>This site is as light and fast as I&rsquo;ve been able to make it. Static pages. &lt;1.5 KB of CSS. Zero JavaScript. The entire site is (as of today) under 250KB, and no individual page is larger than 17kB. I&rsquo;m serving it through <a href="https://netlify.com">Netlify</a>, and their CDNs are more than adequate for static sites. I&rsquo;m working on minimizing the footprint further, but short of plaintext served via, say, <a href="https://en.wikipedia.org/wiki/Gopher_(protocol)">gopher</a> or <a href="https://gemini.circumlunar.space/">gemini</a>, I think this is fairly light and loads quick enough even on 2G cell data.</p>
-<h3 id="contrast">Contrast</h3>
-<p>I&rsquo;ve implemented the prefers-color-scheme media query in my CSS to present a light or dark themed site based on the user&rsquo;s existing preference (typically read from their phone theme or desktop theme or browser flag). For light mode, it is black text on a white background. Not the most exciting thing in the world but it&rsquo;s as readable as can be. I&rsquo;ve preferred dark mode in a lot of my personal applications but serving only white text on black can be pretty jarring for a lot of people, and grey text comes at the cost of reducing contrast and general readability for visually impaired users if it is the only option available. I haven&rsquo;t come across a convincing way to implement a dark mode toggle without JS, which is why I haven&rsquo;t given the explicit option.</p>
-<h3 id="general-readability">General Readability</h3>
-<p>On desktop, the content is centered and will cover 50% of the screen width,which translates to roughly 70-85 characters per line depending on the size of your monitor. This goes up to 90% on portrait displays (like phones) to minimize wastage of limited vertical real estate. There is just enough of a margin to ensure content doesn&rsquo;t overflow for phones with silly curved displays and leave room for swipe based gestures. I&rsquo;m using 1.125em font size (translates to 18pt on <em>most</em> browsers by default); I think it is fairly large for those who need it without being too huge for those who don&rsquo;t. The site is fully zoom-compatible, so text sizes can be changed without hassle using your browser&rsquo;s zoom functionality. I&rsquo;ve opted for a line height (spacing) of 1.5 as well. I don&rsquo;t (and won&rsquo;t) use all caps or justified alignment.</p>
-<h3 id="font">Font</h3>
-<p>I&rsquo;m sticking to sans serif fonts with high availability and generally clean typefaces. I&rsquo;m also looking at slab fonts because they&rsquo;re the most attractive to me, but I&rsquo;m not sure how legible or accessible they are in general. I wasn&rsquo;t able to find any definitive source on the most accessible fonts. The ones that market themselves as being specifically designed for visually impaired users tend to have the following issues.</p>
-<ol>
-<li>Convoluted commercial licenses, which I can&rsquo;t afford to use and am opposed to in general.</li>
-<li>Lack of availability, as in they are unlikely to be installed on the vast majority of systems. Would need to be embedded with the site, increasing the size of each page by at least 100kb.</li>
-<li>From what I understand, these also tend to be not-as-good for general use (OpenDyslexic for example seems to be difficult to read for me) or for people suffering from disabilities other than the one they target, and the data proving their efficacy is a little scarce, although that can well be attributed to the general lack of data for people with disabilities.</li>
-</ol>
-<h3 id="links">Links</h3>
-<p>If you visited my site earlier this month you might recall that the text was all-black. The links were the same color as the text, with only the underline to distinguish them. I still really like the look, especially when it is done well on blogs like those maintained by <a href="https://macwright.com">Tom MacWright</a> and <a href="https://jlelse.dev">Jan-Lukas Else</a>, for instance. But with my shoddy CSSwork it just didn&rsquo;t look right.</p>
-<ol>
-<li>Data strongly also suggests that users associate blue with links because it is the default choice in HTML, and has good contrast with black or white text. It also provides another critical factor to distinguish links from the rest of the text content. I didn&rsquo;t like the default blue choice for HTML, so I&rsquo;ve gone for a more mellow #0d47a1 (light mode) and #4bbaff (dark mode) instead.</li>
-<li>Now, one thing I absolutely hate is underlines on links, because for letters which have descenders/tails that go below the line, the underline goes right through them and the result is really ugly. Underlines are important though, especially if your visitor isn&rsquo;t able to clearly distinguish your link color from the other elements. To avoid this, I&rsquo;ve removed underlines and gone for a 1px bottom border instead, which is drawn below the descender. I think that is an acceptable compromise.</li>
-</ol>
-<h3 id="screen-reader-compliance">Screen Reader Compliance</h3>
-<p>I&rsquo;ve kept all formatting as basic and standard as possible, and there are no convoluted maneuvers that will interfere with screen readers. I&rsquo;ve tested this with Microsoft Narrator and it works fine.</p>
-<p>It&rsquo;s worth remembering that aside from images having alt tags, it is also important for your tables to have alt tags for each column as this allows the screen reader to describe the column before talking about the data in it. I&rsquo;ve only got tables on one page (Library) right now, but that follows this already.</p>
-<p>I&rsquo;m using HTML5 semantic elements like header, nav, section, footer etc as well. I&rsquo;ve also kept a lang=en on the html declaration which I&rsquo;ve read helps screen readers parse the content.</p>
-<h3 id="alt-text-on-images">Alt text on Images</h3>
-<p>This is important not only for screen readers but also for people in poorly connected areas who are unable to load anything beyond the text content. It also helps years down the line if you are linking to external images that may not be there. The link may break but your alt text is there to stay.</p>
-<h3 id="css-and-mouse-independence-and-terminal-based-browsers">CSS and Mouse Independence and Terminal Based Browsers</h3>
-<p>The site looks fine without loading the CSS file. I don&rsquo;t rely on any fancy CSS shenanigans, mostly because I don&rsquo;t know or need them. I&rsquo;m a big fan of terminal-based browsers, and have checked the site with links, lynx, and w3m. Looks pretty good, if I may say so. I don&rsquo;t hijack clicks or scrolling so users are free to navigate using their keyboard.</p>
-<h3 id="proper-html-structure">Proper HTML Structure</h3>
-<p>I use very basic HTML structure in my Jinja templates but adhere to all the hits: semantic elements, ordered heading tags, alt text, meta descriptions and so on.</p>
-<h3 id="forms">Forms</h3>
-<p>I only have one form on this site for the contact page, and it is very basic. It is labelled and visible.</p>
-<h3 id="concluding">Concluding</h3>
-<p>If you are looking to implement accessibility features on their site can refer to <a href="https://dotcms.com/blog/post/website-accessibility-checklist-10-steps-towards-website-compliance">DotCMS&rsquo;s excellent accessibility checklist</a> or <a href="https://websitesetup.org/web-accessibility-checklist/">another great guide from websitesetup.org</a>.  If you have any suggestions for how I can improve accessibility, please <a href="/contact">contact me.</a></p>
-
-</content>
-<p>
-  
-</p>
-
-  </main>
-  <footer><hr>
-<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
-    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
-    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
-        ʕ•ᴥ•ʔ Bear</a>
-</i></footer>
-
-    
-</body>
-
-</html>
+</p></main><footer><hr>
+<i style=line-height:0>Copyright © 2020-2022, Ronit Ray.<br>
+<p>Licenses: CC BY-SA (content), MIT (code). <a href=/license>Read the license notice.</a></p>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo
+ʕ•ᴥ•ʔ Bear</a>
+</i></footer></body></html>
