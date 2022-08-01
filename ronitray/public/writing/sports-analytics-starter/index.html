@@ -1,49 +1,329 @@
-<!doctype html><html lang=en-us>
+<!DOCTYPE html>
+<html lang="en-US">
+
 <head>
-<meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel="shortcut icon" href=https://ronitray.xyz/images/favicon.png>
-<title>Getting Your Feet (and mine) Wet in the World of Sports Analytics | Ronit Ray</title><meta name=title content="Getting Your Feet (and mine) Wet in the World of Sports Analytics">
-<meta name=description content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter.">
-<meta name=keywords content>
-<meta property="og:title" content="Getting Your Feet (and mine) Wet in the World of Sports Analytics">
-<meta property="og:description" content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://ronitray.xyz/writing/sports-analytics-starter/"><meta property="og:image" content="https://ronitray.xyz/images/share.png"><meta property="article:section" content="writing">
-<meta property="article:published_time" content="2021-11-05T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-11-05T00:00:00+00:00"><meta property="og:site_name" content="Ronit Ray">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://ronitray.xyz/images/share.png">
-<meta name=twitter:title content="Getting Your Feet (and mine) Wet in the World of Sports Analytics">
-<meta name=twitter:description content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter.">
-<meta itemprop=name content="Getting Your Feet (and mine) Wet in the World of Sports Analytics">
-<meta itemprop=description content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter."><meta itemprop=datePublished content="2021-11-05T00:00:00+00:00">
-<meta itemprop=dateModified content="2021-11-05T00:00:00+00:00">
-<meta itemprop=wordCount content="1180"><meta itemprop=image content="https://ronitray.xyz/images/share.png">
-<meta itemprop=keywords content>
-<meta name=referrer content="no-referrer-when-downgrade">
-<style>:root{--accent-color:rgb(112, 229, 245)}body{font-family:monospace;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#1a1a1a;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#fff;font-size:1.1em}h1,h2,h3,h4,h5,h6{color:var(--accent-color)}a,a:visited{color:var(--accent-color)!important;text-decoration:none!important;padding:0 0 2px;border-bottom:1px solid var(--accent-color)}.title{border-bottom:1px solid var(--accent-color)!important;border:0}.title span{font-size:1.4em;font-weight:700!important}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#292929}pre code{color:#fff;display:block;padding:20px;white-space:pre-wrap;font-size:14px}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:var(--accent-color);padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex;margin:15px 0}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}</style></head><body>
-<header><a href=/ class=title style="border-bottom:1px solid var(--accent-color)">
-<span>Ronit Ray</span>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>Getting Your Feet (and mine) Wet in the World of Sports Analytics | Ronit Ray</title>
+<meta name="title" content="Getting Your Feet (and mine) Wet in the World of Sports Analytics" />
+<meta name="description" content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Getting Your Feet (and mine) Wet in the World of Sports Analytics" />
+<meta property="og:description" content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/sports-analytics-starter/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2021-11-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-05T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="Getting Your Feet (and mine) Wet in the World of Sports Analytics"/>
+<meta name="twitter:description" content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter."/>
+
+
+
+<meta itemprop="name" content="Getting Your Feet (and mine) Wet in the World of Sports Analytics">
+<meta itemprop="description" content="A list of resources for data analytics and visualization, specifically in the sports world thanks to Tom Worville and a number of awesome people on Twitter."><meta itemprop="datePublished" content="2021-11-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-11-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1180"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
 </a>
 <nav>
-</nav></header><main>
-<h1>Getting Your Feet (and mine) Wet in the World of Sports Analytics</h1><p>
-<i>
-<time datetime=2021-11-05 pubdate>
-2021-11-05
-</time>
-</i>
-</p><content>
-<h5 id=personal-note-i-love-football-i-didnt-get-into-the-game-very-early-in-my-life-but-since-age-12-or-so-i-have-been-absolutely-obsessed-earlier-this-year-i-got-a-subscription-to-a-hrefhttpstheathleticcomthe-athletica-and-was-exposed-to-some-of-the-best-football-coverage-ive-ever-read-while-i-cannot-afford-the-subscription-anymore-i-still-have-access-to-a-lot-of-their-content-through-podcasts-and-partner-youtube-channels-like-the-excellent-a-hrefhttpswwwyoutubecomctifofootballtifo-footballa-and-a-hrefhttpswwwyoutubecomctifoirltifo-irla-tom-worville-their-data-analytics-writer-has-consistently-put-out-superb-work-that-is-informative-and-interesting-more-recently-he-has-featured-in-a-series-of-videos-by-tifo-comparing-players-in-europes-top-leagues-across-several-dimensions-using-scattergrams>Personal note: I love football. I didn&rsquo;t get into the game very early in my life, but since age 12 or so, I have been absolutely obsessed. Earlier this year, I got a subscription to The Athletic and was exposed to some of the best football coverage I&rsquo;ve ever read. While I cannot afford the subscription anymore, I still have access to a lot of their content through podcasts and partner YouTube channels like the excellent Tifo Football and Tifo IRL. Tom Worville, their data analytics writer, has consistently put out superb work that is informative and interesting. More recently, he has featured in a series of videos by Tifo, comparing players in Europe&rsquo;s top leagues across several dimensions using scattergrams.</h5><h5 id=very-recently-tom-has-signed-as-a-data-scientist-for-rb-leipzig-one-of-the-hottest-projects-in-europe-congratulations-tom-i-think-its-fair-to-say-his-work-has-impressed-me-and-maybe-even-inspired-me-to-dip-my-toes-in-the-field-thankfully-worville-himself-and-a-number-of-awesome-people-on-twitter-have-compiled-more-resources-than-i-can-get-through-in-quite-some-time-this-post-is-an-attempt-to-document-the-same-99-of-the-effort-is-from-the-people-who-actually-created-the-materials-and-compiled-them-all-i-have-done-is-removed-twitters-stupid-tracking-links-and-cleaned-up-the-formatting-a-little-so-its-actually-readable-i-will-hopefully-be-visiting-some-of-these-materials-in-the-future-and-writing-about-what-i-learn-from-them>Very recently, Tom has signed as a Data Scientist for RB Leipzig, one of the hottest projects in Europe (Congratulations, Tom!). I think it&rsquo;s fair to say his work has impressed me and maybe even inspired me to dip my toes in the field. Thankfully, Worville himself and a number of awesome people on Twitter have compiled more resources than I can get through in quite some time. This post is an attempt to document the same. 99% of the effort is from the people who actually created the materials and compiled them. All I have done is removed Twitter&rsquo;s stupid tracking links and cleaned up the formatting a little so it&rsquo;s actually readable. I will hopefully be visiting some of these materials in the future and writing about what I learn from them.</h5><h2 id=threadhttpstwittercomworvillestatus1275732993819250688-by-tom-worvillehttpstwittercomworvillestatus1275732993819250688><a href=https://twitter.com/Worville/status/1275732993819250688>Thread</a> by <a href=https://twitter.com/Worville/status/1275732993819250688>Tom Worville</a></h2><p>To start, here’s a great thread of intro blogs for working with and plotting <a href=https://twitter.com/StatsBomb>@StatsBomb</a> data in R by <a href=https://twitter.com/biscuitchaser>@biscuitchaser</a></p><ol>
-<li><a href=https://biscuitchaserfc.blogspot.com/2020/03/getting-started-in-r-with-statsbomb-data.html>Plotting passes using and getting started in R</a></li><li><a href=https://biscuitchaserfc.blogspot.com/2020/04/using-r-and-statsbomb-data-part-2.html>Adding further information to pass plots</a></li><li><a href=https://biscuitchaserfc.blogspot.com/2020/04/using-statsbomb-data-part-3.html>Comparing WSL creators</a></li><li><a href=https://biscuitchaserfc.blogspot.com/2020/05/shot-maps-in-r-using-statsbomb-data.html>Shots maps for WSL</a></li><li><a href=https://biscuitchaserfc.blogspot.com/2020/06/using-wyscout-in-r.html>Using Wyscout data in R</a></li></ol><p>Piece by <a href=https://twitter.com/GregorydSam>@GregorydSam</a>: <a href=https://medium.com/@GregorydSam/getting-into-sports-analytics-2-0-129dfb87f5be>Getting into Sports Analytics 2.0</a></p><p>Some good advice from <a href=https://twitter.com/smarterscout>@smarterscout</a> in <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMTAyMDYxLnJzcw/episode/QnV6enNwcm91dC00NDI5NTMy?hl=en-GB&ved=2ahUKEwiI2OzLt7jqAhXVoFwKHcQ2ASYQjrkEegQIBxAE&ep=6">this podcast ep about getting into the industry, along with the much needed about the relatively few jobs on offer</a></p><p>Another plug for <a href=https://twitter.com/rweekly_org>@rweekly_org</a>, this week is by the great <a href=https://twitter.com/R_by_Ryo>@R_by_Ryo</a> Including - Creating an xG model with R <a href=https://twitter.com/thecomeonman>@thecomeonman</a>&rsquo;s arsenal of code examples</p><p><a href=https://education.rstudio.com/blog/2020/08/spreadsheets-using-r/>This</a> is a gentle how-to guide for those who are approaching R from being excel users first and foremost.</p><p><a href=https://towardsdatascience.com/ten-up-to-date-ways-to-do-common-data-tasks-in-r-4f15e56c92d>This</a> is a great <code>#Rstats</code> guide to making the most of recent changes to the {tidyverse} Big one for me is relocating columns in a dataframe, which dplyr::relocate() can help with now. Thanks <a href=https://twitter.com/dr_keithmcnulty>@dr_keithmcnulty</a>!</p><p>The great <a href=https://twitter.com/thomas_mock>@thomas_mock</a> has been on a TEAR recently with some nice blogs on building better tables using {gt}, but more relevant is <a href=https://themockup.blog/posts/2020-08-28-heatmaps-in-ggplot2/>this well thought out piece on heatmap design.</a></p><p>Shout out to <a href=https://twitter.com/icymi_r>@icymi_r</a> which is a great <code>#rstats</code> content aggregator.</p><p>Not posted here for a while, but <a href=https://twitter.com/JanVanHaaren>@JanVanHaaren</a>&rsquo;s <a href=https://janvanhaaren.be/2020/12/30/soccer-analytics-review-2020.html>excellent summary of football analytics in 2020</a> is well worth a read:</p><p>Feel it’s quite common that people have “coding scrapbooks” of functions/tips they return to over and over again. <a href=https://gustasam5.medium.com/some-useful-python-stuff-92f0b013c9a4>Sam’s here is neat</a></p><p>Had a couple of DMs asking about coding tutorials. Have to say that <a href=https://twitter.com/mckayjohns>@mckayjohns</a> is the GOAT, and a great place to get started</p><p>Also<a href=https://twitter.com/Soccermatics>@Soccermatics</a>&rsquo; <a href=https://www.youtube.com/channel/UCUBFJYcag8j2rm_9HkrrA7w>Friends of Tracking channel</a> has tons too.</p><p>Just stumbled across <a href=https://github.com/eddwebster/football_analytics>this Github repo</a> of links and various resources by <a href=https://twitter.com/eddwebster>@eddwebster</a>, unbelievable effort to keep on top of all of this.</p><p>Great work by <a href=https://twitter.com/PfaffCatherine>@PfaffCatherine</a> pulling a list together of <a href=https://mast.queensu.ca/~cpfaff/FemaleSportsAnalysts.pdf>female identifying sports analysts</a>, hopefully serves as inspiration to others + good to spotlight those succeeding in such a male-dominated industry.</p><h2 id=threadhttpstwittercomtylermorganwallstatus1278455988920758277langen-by-tylermorganwallhttpstwittercomtylermorganwall><a href="https://twitter.com/tylermorganwall/status/1278455988920758277?lang=en">Thread</a> by <a href=https://twitter.com/tylermorganwall>@tylermorganwall</a></h2><p>Reminder: there are hundreds of great, FREE learning resources for <code>#rstats</code> out there. There&rsquo;s no need to sign up to take courses with a disgusting, ethically bankrupt company with sniveling, feckless leadership.</p><p>I&rsquo;m completely self-taught in R. Here&rsquo;s a list of the FREE, OPEN materials I&rsquo;ve used on my journey: For data wrangling and visualization, nothing beats <a href=https://r4ds.had.co.nz>Hadley&rsquo;s &ldquo;R for Data Science&rdquo;</a></p><p>Want to learn about data visualization? Check out <a href=https://twitter.com/ClausWilke>@ClausWilke</a>&rsquo;s <a href=https://serialmentor.com/dataviz/>&ldquo;Fundamentals of Data Visualization&rdquo;</a>. While not a book about R specifically, it&rsquo;s a great resource for learning what makes a good, interpretable viz. Plus, the book&rsquo;s code is available!</p><p>If you want to learn about ggplot2 plotting in particular, it&rsquo;s best to get it straight from the source: read Hadley&rsquo;s ggplot2: <a href=https://ggplot2-book.org/>Elegant Graphics for Data Analysis</a>. I can&rsquo;t imagine why you&rsquo;d want to learn it from anyone else.</p><p>For diving into the internals of R, <a href=http://adv-r.had.co.nz>Hadley&rsquo;s &ldquo;Advanced R&rdquo;</a> is a wonderful resource. I&rsquo;ve gone back to it several times over the years and found new nuggets of info. Confused about environments or closures, or how to debug C code or NSE? Check it out. The second edition of &ldquo;Advanced R&rdquo; is available at a <a href=https://adv-r.hadley.nz>slightly different URL</a></p><p>Want to learn about maps, GIS, and spatial analysis and visualization? Check out <a href=https://twitter.com/robinlovelace>@robinlovelace</a> & <a href=https://twitter.com/jakub_nowosad>@jakub_nowosad</a>&rsquo;s <a href=https://geocompr.robinlovelace.net/>&ldquo;Geocomputation with R&rdquo;</a>, a great free resource on geographic data analysis, visualization and modeling.</p><p>Want to learn how to spin up your own data analysis cluster and do work on &ldquo;big data&rdquo; in R? Check out <a href=https://twitter.com/javierluraschi>@javierluraschi</a>&rsquo;s <a href=https://therinspark.com/>&ldquo;Mastering Spark with R.&rdquo;</a> He even shows you how to fire up a rayrender render farm for complex 3D visualizations!</p><p>If you like the &ldquo;in person&rdquo; learning experience video provides and you&rsquo;re interested in learning more about making maps in R with rayshader, check out my open and free masterclass I taught with the <a href=https://twitter.com/PennMUSA>@PennMUSA</a> program:</p><ul>
-<li><a href=https://penniur.upenn.edu/events/musamasterclass-featuring-tyler-morgan-wall-3d-mapping-dataviz-in-r>Course</a></li><li><a href=https://github.com/tylermorganwall/MusaMasterclass>Code</a></li></ul><p>Finally, the R community is the best—if you ever run into seemingly intractable problems on your journey, tweet your issue with the <code>#rstats</code> hashtag & almost certainly you&rsquo;ll get help. And if that fails, try the <a href=https://community.rstudio.com/>community forums hosted by RStudio</a></p><p>I&rsquo;d add <a href=https://socviz.co/>Kieran Healy&rsquo;s Data Visualization</a>, available in a free online format as well as a textbook.</p><p>There is an <a href=https://rfordatasci.com>awesome Slack group</a> to help work through the book (and help on all other R questions as well). People are really helpful and friendly!</p><p>Learn about solve text mining problems with <a href=https://www.tidytextmining.com/>&ldquo;Text Mining with R&rdquo;</a>! Great introduction to the tidytext package and working with text data by <a href=https://twitter.com/juliasilge>@juliasilge</a> & <a href=https://twitter.com/drob>@drob</a></p><p>Another resource - I like to tell complete beginners to check out <a href=https://swirlstats.com>Swirl</a>.</p><h2 id=tweethttpstwittercomlucystatsstatus1278724184517083136-by-lucy-dagostino-mcgowanhttpstwittercomlucystats><a href=https://twitter.com/lucystats/status/1278724184517083136>Tweet</a> by <a href=https://twitter.com/LucyStats>Lucy D’Agostino McGowan</a></h2><p>Have you checked out<a href=https://twitter.com/dcossyle>@dcossyle</a>&rsquo;s teacup giraffes and stats? I think it is definitely high schooler friendly! <a href=https://tinystats.github.io/teacups-giraffes-and-statistics/>https://tinystats.github.io/teacups-giraffes-and-statistics/</a></p><h2 id=tweethttpstwittercomaggieerinstatus1278525024228573185-by-dr-erin-buchananhttpstwittercomaggieerin><a href=https://twitter.com/aggieerin/status/1278525024228573185>Tweet</a> by <a href=https://twitter.com/aggieerin>Dr. Erin Buchanan</a></h2><ul>
-<li>Hi fam! If you want learn some <code>#sem</code> <code>#rstats</code> <code>#lavaan</code> for free(!) I have <a href="https://www.youtube.com/playlist?app=desktop&list=PLw93TUuxrFAZkJVc5dhgTZpOT7qmTjlT7">my entire course on YouTube</a>. Even better, the great <a href=https://twitter.com/Savvylewis15>@Savvylewis15</a> has helped me reorganize my YouTube excel sheet so the website will include a watching order list again soon.</li></ul><h2 id=threadhttpstwittercomameliamnstatus1152269862850506752-by-amelia-mcnamarahttpstwittercomameliamn><a href=https://twitter.com/AmeliaMN/status/1152269862850506752>Thread</a> by <a href=https://twitter.com/AmeliaMN>Amelia McNamara</a></h2><p>I’d love to gather open source interactive R lessons. I’ll start a thread here, but please chime in! <code>rstats</code> <code>#tidyverse</code></p><p>There are <a href=(https://rstudio.cloud/learn/primers)>introductory primers</a> on <a href=https://twitter.com/rstudio>@rstudio</a>.</p><p><a href=https://noamross.github.io/gams-in-r-course/>Noam Ross&rsquo;s GAM Course</a></p><p><a href=https://twitter.com/tladeras>@tladeras</a> and <a href=https://twitter.com/datapointier>@datapointier</a>’s <a href=https://r-bootcamp.netlify.com>intro to the tidyverse R bootcamp</a></p><p>Ted’s R package to <a href=https://github.com/laderast/decampr>convert DC courses</a></p><p><a href=https://twitter.com/grant_mcdermott>Grant McDermott</a> courses:</p><ul>
-<li><a href=https://github.com/uo-ec607/lectures#data-science-for-economists>Data Science for Economists</a></li><li><a href=https://github.com/uo-ec510-2020-spring/lectures#big-data-in-economics-ec-410510>Big Data in Economics</a></li></ul><h2 id=tweet-by-rebecca-barterhttpstwittercomrlbarter>Tweet by <a href=https://twitter.com/rlbarter>Rebecca Barter</a></h2><p><a href=https://www.rebeccabarter.com/blog/2020-03-25_machine_learning/>Tidymodels: tidy machine learning in R</a>. A concise introduction to machine learning in R using the new(ish) tidymodels pipeline (essentially caret&rsquo;s successor). Thanks to<a href=https://twitter.com/topepos>@topepos</a> and team!</p></content>
+</nav>
+</header>
+  <main>
+
+<h1>Getting Your Feet (and mine) Wet in the World of Sports Analytics</h1>
 <p>
-</p></main><footer><hr>
-<i style=line-height:0>Copyright © 2020-2022, Ronit Ray.<br>
-<p>Licenses: CC BY-SA (content), MIT (code). <a href=/license>Read the license notice.</a></p>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo
-ʕ•ᴥ•ʔ Bear</a>
-</i></footer></body></html>
+  <i>
+    <time datetime='2021-11-05' pubdate>
+      2021-11-05
+    </time>
+  </i>
+</p>
+
+<content>
+  <h5 id="personal-note-i-love-football-i-didnt-get-into-the-game-very-early-in-my-life-but-since-age-12-or-so-i-have-been-absolutely-obsessed-earlier-this-year-i-got-a-subscription-to-a-hrefhttpstheathleticcomthe-athletica-and-was-exposed-to-some-of-the-best-football-coverage-ive-ever-read-while-i-cannot-afford-the-subscription-anymore-i-still-have-access-to-a-lot-of-their-content-through-podcasts-and-partner-youtube-channels-like-the-excellent-a-hrefhttpswwwyoutubecomctifofootballtifo-footballa-and-a-hrefhttpswwwyoutubecomctifoirltifo-irla-tom-worville-their-data-analytics-writer-has-consistently-put-out-superb-work-that-is-informative-and-interesting-more-recently-he-has-featured-in-a-series-of-videos-by-tifo-comparing-players-in-europes-top-leagues-across-several-dimensions-using-scattergrams">Personal note: I love football. I didn&rsquo;t get into the game very early in my life, but since age 12 or so, I have been absolutely obsessed. Earlier this year, I got a subscription to <!-- raw HTML omitted -->The Athletic<!-- raw HTML omitted --> and was exposed to some of the best football coverage I&rsquo;ve ever read. While I cannot afford the subscription anymore, I still have access to a lot of their content through podcasts and partner YouTube channels like the excellent <!-- raw HTML omitted -->Tifo Football<!-- raw HTML omitted --> and <!-- raw HTML omitted -->Tifo IRL<!-- raw HTML omitted -->. Tom Worville, their data analytics writer, has consistently put out superb work that is informative and interesting. More recently, he has featured in a series of videos by Tifo, comparing players in Europe&rsquo;s top leagues across several dimensions using scattergrams.</h5>
+<h5 id="very-recently-tom-has-signed-as-a-data-scientist-for-rb-leipzig-one-of-the-hottest-projects-in-europe-congratulations-tom-i-think-its-fair-to-say-his-work-has-impressed-me-and-maybe-even-inspired-me-to-dip-my-toes-in-the-field-thankfully-worville-himself-and-a-number-of-awesome-people-on-twitter-have-compiled-more-resources-than-i-can-get-through-in-quite-some-time-this-post-is-an-attempt-to-document-the-same-99-of-the-effort-is-from-the-people-who-actually-created-the-materials-and-compiled-them-all-i-have-done-is-removed-twitters-stupid-tracking-links-and-cleaned-up-the-formatting-a-little-so-its-actually-readable-i-will-hopefully-be-visiting-some-of-these-materials-in-the-future-and-writing-about-what-i-learn-from-them">Very recently, Tom has signed as a Data Scientist for RB Leipzig, one of the hottest projects in Europe (Congratulations, Tom!). I think it&rsquo;s fair to say his work has impressed me and maybe even inspired me to dip my toes in the field. Thankfully, Worville himself and a number of awesome people on Twitter have compiled more resources than I can get through in quite some time. This post is an attempt to document the same. 99% of the effort is from the people who actually created the materials and compiled them. All I have done is removed Twitter&rsquo;s stupid tracking links and cleaned up the formatting a little so it&rsquo;s actually readable. I will hopefully be visiting some of these materials in the future and writing about what I learn from them.</h5>
+<!-- raw HTML omitted -->
+<h2 id="threadhttpstwittercomworvillestatus1275732993819250688-by-tom-worvillehttpstwittercomworvillestatus1275732993819250688"><a href="https://twitter.com/Worville/status/1275732993819250688">Thread</a> by <a href="https://twitter.com/Worville/status/1275732993819250688">Tom Worville</a></h2>
+<p>To start, here’s a great thread of intro blogs for working with and plotting <a href="https://twitter.com/StatsBomb">@StatsBomb</a> data in R by <a href="https://twitter.com/biscuitchaser">@biscuitchaser</a></p>
+<ol>
+<li><a href="https://biscuitchaserfc.blogspot.com/2020/03/getting-started-in-r-with-statsbomb-data.html">Plotting passes using and getting started in R</a></li>
+<li><a href="https://biscuitchaserfc.blogspot.com/2020/04/using-r-and-statsbomb-data-part-2.html">Adding further information to pass plots</a></li>
+<li><a href="https://biscuitchaserfc.blogspot.com/2020/04/using-statsbomb-data-part-3.html">Comparing WSL creators</a></li>
+<li><a href="https://biscuitchaserfc.blogspot.com/2020/05/shot-maps-in-r-using-statsbomb-data.html">Shots maps for WSL</a></li>
+<li><a href="https://biscuitchaserfc.blogspot.com/2020/06/using-wyscout-in-r.html">Using Wyscout data in R</a></li>
+</ol>
+<p>Piece by <a href="https://twitter.com/GregorydSam">@GregorydSam</a>: <a href="https://medium.com/@GregorydSam/getting-into-sports-analytics-2-0-129dfb87f5be">Getting into Sports Analytics 2.0</a></p>
+<p>Some good advice from <a href="https://twitter.com/smarterscout">@smarterscout</a> in <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMTAyMDYxLnJzcw/episode/QnV6enNwcm91dC00NDI5NTMy?hl=en-GB&amp;ved=2ahUKEwiI2OzLt7jqAhXVoFwKHcQ2ASYQjrkEegQIBxAE&amp;ep=6">this podcast ep about getting into the industry, along with the much needed about the relatively few jobs on offer</a></p>
+<p>Another plug for <a href="https://twitter.com/rweekly_org">@rweekly_org</a>, this week is by the great <a href="https://twitter.com/R_by_Ryo">@R_by_Ryo</a> Including - Creating an xG model with R <a href="https://twitter.com/thecomeonman">@thecomeonman</a>&rsquo;s arsenal of code examples</p>
+<p><a href="https://education.rstudio.com/blog/2020/08/spreadsheets-using-r/">This</a> is a gentle how-to guide for those who are approaching R from being excel users first and foremost.</p>
+<p><a href="https://towardsdatascience.com/ten-up-to-date-ways-to-do-common-data-tasks-in-r-4f15e56c92d">This</a> is a great <code>#Rstats</code> guide to making the most of recent changes to the {tidyverse} Big one for me is relocating columns in a dataframe, which dplyr::relocate() can help with now. Thanks <a href="https://twitter.com/dr_keithmcnulty">@dr_keithmcnulty</a>!</p>
+<p>The great <a href="https://twitter.com/thomas_mock">@thomas_mock</a> has been on a TEAR recently with some nice blogs on building better tables using {gt}, but more relevant is <a href="https://themockup.blog/posts/2020-08-28-heatmaps-in-ggplot2/">this well thought out piece on heatmap design.</a></p>
+<p>Shout out to <a href="https://twitter.com/icymi_r">@icymi_r</a> which is a great <code>#rstats</code> content aggregator.</p>
+<p>Not posted here for a while, but <a href="https://twitter.com/JanVanHaaren">@JanVanHaaren</a>&rsquo;s <a href="https://janvanhaaren.be/2020/12/30/soccer-analytics-review-2020.html">excellent summary of football analytics in 2020</a> is well worth a read:</p>
+<p>Feel it’s quite common that people have “coding scrapbooks” of functions/tips they return to over and over again. <a href="https://gustasam5.medium.com/some-useful-python-stuff-92f0b013c9a4">Sam’s here is neat</a></p>
+<p>Had a couple of DMs asking about coding tutorials. Have to say that <a href="https://twitter.com/mckayjohns">@mckayjohns</a> is the GOAT, and a great place to get started</p>
+<p>Also<a href="https://twitter.com/Soccermatics">@Soccermatics</a>&rsquo; <a href="https://www.youtube.com/channel/UCUBFJYcag8j2rm_9HkrrA7w">Friends of Tracking channel</a> has tons too.</p>
+<p>Just stumbled across <a href="https://github.com/eddwebster/football_analytics">this Github repo</a> of links and various resources by <a href="https://twitter.com/eddwebster">@eddwebster</a>, unbelievable effort to keep on top of all of this.</p>
+<p>Great work by <a href="https://twitter.com/PfaffCatherine">@PfaffCatherine</a> pulling a list together of <a href="https://mast.queensu.ca/~cpfaff/FemaleSportsAnalysts.pdf">female identifying sports analysts</a>, hopefully serves as inspiration to others + good to spotlight those succeeding in such a male-dominated industry.</p>
+<h2 id="threadhttpstwittercomtylermorganwallstatus1278455988920758277langen-by-tylermorganwallhttpstwittercomtylermorganwall"><a href="https://twitter.com/tylermorganwall/status/1278455988920758277?lang=en">Thread</a> by <a href="https://twitter.com/tylermorganwall">@tylermorganwall</a></h2>
+<p>Reminder: there are hundreds of great, FREE learning resources for <code>#rstats</code> out there. There&rsquo;s no need to sign up to take courses with a disgusting, ethically bankrupt company with sniveling, feckless leadership.</p>
+<p>I&rsquo;m completely self-taught in R. Here&rsquo;s a list of the FREE, OPEN materials I&rsquo;ve used on my journey: For data wrangling and visualization, nothing beats <a href="https://r4ds.had.co.nz">Hadley&rsquo;s &ldquo;R for Data Science&rdquo;</a></p>
+<p>Want to learn about data visualization? Check out <a href="https://twitter.com/ClausWilke">@ClausWilke</a>&rsquo;s <a href="https://serialmentor.com/dataviz/">&ldquo;Fundamentals of Data Visualization&rdquo;</a>. While not a book about R specifically, it&rsquo;s a great resource for learning what makes a good, interpretable viz. Plus, the book&rsquo;s code is available!</p>
+<p>If you want to learn about ggplot2 plotting in particular, it&rsquo;s best to get it straight from the source: read Hadley&rsquo;s ggplot2: <a href="https://ggplot2-book.org/">Elegant Graphics for Data Analysis</a>. I can&rsquo;t imagine why you&rsquo;d want to learn it from anyone else.</p>
+<p>For diving into the internals of R, <a href="http://adv-r.had.co.nz">Hadley&rsquo;s &ldquo;Advanced R&rdquo;</a> is a wonderful resource. I&rsquo;ve gone back to it several times over the years and found new nuggets of info. Confused about environments or closures, or how to debug C code or NSE? Check it out. The second edition of &ldquo;Advanced R&rdquo; is available at a <a href="https://adv-r.hadley.nz">slightly different URL</a></p>
+<p>Want to learn about maps, GIS, and spatial analysis and visualization? Check out <a href="https://twitter.com/robinlovelace">@robinlovelace</a> &amp; <a href="https://twitter.com/jakub_nowosad">@jakub_nowosad</a>&rsquo;s <a href="https://geocompr.robinlovelace.net/">&ldquo;Geocomputation with R&rdquo;</a>, a great free resource on geographic data analysis, visualization and modeling.</p>
+<p>Want to learn how to spin up your own data analysis cluster and do work on &ldquo;big data&rdquo; in R? Check out <a href="https://twitter.com/javierluraschi">@javierluraschi</a>&rsquo;s <a href="https://therinspark.com/">&ldquo;Mastering Spark with R.&rdquo;</a> He even shows you how to fire up a rayrender render farm for complex 3D visualizations!</p>
+<p>If you like the &ldquo;in person&rdquo; learning experience video provides and you&rsquo;re interested in learning more about making maps in R with rayshader, check out my open and free masterclass I taught with the <a href="https://twitter.com/PennMUSA">@PennMUSA</a> program:</p>
+<ul>
+<li><a href="https://penniur.upenn.edu/events/musamasterclass-featuring-tyler-morgan-wall-3d-mapping-dataviz-in-r">Course</a></li>
+<li><a href="https://github.com/tylermorganwall/MusaMasterclass">Code</a></li>
+</ul>
+<p>Finally, the R community is the best—if you ever run into seemingly intractable problems on your journey, tweet your issue with the <code>#rstats</code> hashtag &amp; almost certainly you&rsquo;ll get help. And if that fails, try the <a href="https://community.rstudio.com/">community forums hosted by RStudio</a></p>
+<p>I&rsquo;d add <a href="https://socviz.co/">Kieran Healy&rsquo;s Data Visualization</a>, available in a free online format as well as a textbook.</p>
+<p>There is an <a href="https://rfordatasci.com">awesome Slack group</a> to help work through the book (and help on all other R questions as well). People are really helpful and friendly!</p>
+<p>Learn about solve text mining problems with <a href="https://www.tidytextmining.com/">&ldquo;Text Mining with R&rdquo;</a>! Great introduction to the tidytext package and working with text data by <a href="https://twitter.com/juliasilge">@juliasilge</a> &amp; <a href="https://twitter.com/drob">@drob</a></p>
+<p>Another resource - I like to tell complete beginners to check out <a href="https://swirlstats.com">Swirl</a>.</p>
+<h2 id="tweethttpstwittercomlucystatsstatus1278724184517083136-by-lucy-dagostino-mcgowanhttpstwittercomlucystats"><a href="https://twitter.com/lucystats/status/1278724184517083136">Tweet</a> by <a href="https://twitter.com/LucyStats">Lucy D’Agostino McGowan</a></h2>
+<p>Have you checked out<a href="https://twitter.com/dcossyle">@dcossyle</a>&rsquo;s teacup giraffes and stats? I think it is definitely high schooler friendly! <a href="https://tinystats.github.io/teacups-giraffes-and-statistics/">https://tinystats.github.io/teacups-giraffes-and-statistics/</a></p>
+<h2 id="tweethttpstwittercomaggieerinstatus1278525024228573185-by-dr-erin-buchananhttpstwittercomaggieerin"><a href="https://twitter.com/aggieerin/status/1278525024228573185">Tweet</a> by <a href="https://twitter.com/aggieerin">Dr. Erin Buchanan</a></h2>
+<ul>
+<li>Hi fam! If you want learn some <code>#sem</code> <code>#rstats</code> <code>#lavaan</code> for free(!) I have <a href="https://www.youtube.com/playlist?app=desktop&amp;list=PLw93TUuxrFAZkJVc5dhgTZpOT7qmTjlT7">my entire course on YouTube</a>. Even better, the great <a href="https://twitter.com/Savvylewis15">@Savvylewis15</a> has helped me reorganize my YouTube excel sheet so the website will include a watching order list again soon.</li>
+</ul>
+<h2 id="threadhttpstwittercomameliamnstatus1152269862850506752-by-amelia-mcnamarahttpstwittercomameliamn"><a href="https://twitter.com/AmeliaMN/status/1152269862850506752">Thread</a> by <a href="https://twitter.com/AmeliaMN">Amelia McNamara</a></h2>
+<p>I’d love to gather open source interactive R lessons. I’ll start a thread here, but please chime in! <code>rstats</code> <code>#tidyverse</code></p>
+<p>There are <a href="(https://rstudio.cloud/learn/primers)">introductory primers</a> on <a href="https://twitter.com/rstudio">@rstudio</a>.</p>
+<p><a href="https://noamross.github.io/gams-in-r-course/">Noam Ross&rsquo;s GAM Course</a></p>
+<p><a href="https://twitter.com/tladeras">@tladeras</a> and <a href="https://twitter.com/datapointier">@datapointier</a>’s <a href="https://r-bootcamp.netlify.com">intro to the tidyverse R bootcamp</a></p>
+<p>Ted’s R package to <a href="https://github.com/laderast/decampr">convert DC courses</a></p>
+<p><a href="https://twitter.com/grant_mcdermott">Grant McDermott</a> courses:</p>
+<ul>
+<li><a href="https://github.com/uo-ec607/lectures#data-science-for-economists">Data Science for Economists</a></li>
+<li><a href="https://github.com/uo-ec510-2020-spring/lectures#big-data-in-economics-ec-410510">Big Data in Economics</a></li>
+</ul>
+<h2 id="tweet-by-rebecca-barterhttpstwittercomrlbarter">Tweet by <a href="https://twitter.com/rlbarter">Rebecca Barter</a></h2>
+<p><a href="https://www.rebeccabarter.com/blog/2020-03-25_machine_learning/">Tidymodels: tidy machine learning in R</a>. A concise introduction to machine learning in R using the new(ish) tidymodels pipeline (essentially caret&rsquo;s successor). Thanks to<a href="https://twitter.com/topepos">@topepos</a> and team!</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>

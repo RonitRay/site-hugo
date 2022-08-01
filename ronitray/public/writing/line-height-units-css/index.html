@@ -1,46 +1,275 @@
-<!doctype html><html lang=en-us>
+<!DOCTYPE html>
+<html lang="en-US">
+
 <head>
-<meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel="shortcut icon" href=https://ronitray.xyz/images/favicon.png>
-<title>Don't Use Units for Line Height (Txti Please!) | Ronit Ray</title><meta name=title content="Don't Use Units for Line Height (Txti Please!)">
-<meta name=description content="Units are important and necessary in most CSS use cases, but not line height. Here's why.">
-<meta name=keywords content>
-<meta property="og:title" content="Don't Use Units for Line Height (Txti Please!)">
-<meta property="og:description" content="Units are important and necessary in most CSS use cases, but not line height. Here's why.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://ronitray.xyz/writing/line-height-units-css/"><meta property="og:image" content="https://ronitray.xyz/images/share.png"><meta property="article:section" content="writing">
-<meta property="article:published_time" content="2021-03-25T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-03-25T00:00:00+00:00"><meta property="og:site_name" content="Ronit Ray">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://ronitray.xyz/images/share.png">
-<meta name=twitter:title content="Don't Use Units for Line Height (Txti Please!)">
-<meta name=twitter:description content="Units are important and necessary in most CSS use cases, but not line height. Here's why.">
-<meta itemprop=name content="Don't Use Units for Line Height (Txti Please!)">
-<meta itemprop=description content="Units are important and necessary in most CSS use cases, but not line height. Here's why."><meta itemprop=datePublished content="2021-03-25T00:00:00+00:00">
-<meta itemprop=dateModified content="2021-03-25T00:00:00+00:00">
-<meta itemprop=wordCount content="402"><meta itemprop=image content="https://ronitray.xyz/images/share.png">
-<meta itemprop=keywords content>
-<meta name=referrer content="no-referrer-when-downgrade">
-<style>:root{--accent-color:rgb(112, 229, 245)}body{font-family:monospace;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#1a1a1a;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#fff;font-size:1.1em}h1,h2,h3,h4,h5,h6{color:var(--accent-color)}a,a:visited{color:var(--accent-color)!important;text-decoration:none!important;padding:0 0 2px;border-bottom:1px solid var(--accent-color)}.title{border-bottom:1px solid var(--accent-color)!important;border:0}.title span{font-size:1.4em;font-weight:700!important}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#292929}pre code{color:#fff;display:block;padding:20px;white-space:pre-wrap;font-size:14px}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:var(--accent-color);padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex;margin:15px 0}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}</style></head><body>
-<header><a href=/ class=title style="border-bottom:1px solid var(--accent-color)">
-<span>Ronit Ray</span>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>Don&#39;t Use Units for Line Height (Txti Please!) | Ronit Ray</title>
+<meta name="title" content="Don&#39;t Use Units for Line Height (Txti Please!)" />
+<meta name="description" content="Units are important and necessary in most CSS use cases, but not line height. Here&#39;s why." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Don&#39;t Use Units for Line Height (Txti Please!)" />
+<meta property="og:description" content="Units are important and necessary in most CSS use cases, but not line height. Here&#39;s why." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/line-height-units-css/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2021-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-25T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="Don&#39;t Use Units for Line Height (Txti Please!)"/>
+<meta name="twitter:description" content="Units are important and necessary in most CSS use cases, but not line height. Here&#39;s why."/>
+
+
+
+<meta itemprop="name" content="Don&#39;t Use Units for Line Height (Txti Please!)">
+<meta itemprop="description" content="Units are important and necessary in most CSS use cases, but not line height. Here&#39;s why."><meta itemprop="datePublished" content="2021-03-25T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-03-25T00:00:00+00:00" />
+<meta itemprop="wordCount" content="402"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
 </a>
 <nav>
-</nav></header><main>
-<h1>Don't Use Units for Line Height (Txti Please!)</h1><p>
-<i>
-<time datetime=2021-03-25 pubdate>
-2021-03-25
-</time>
-</i>
-</p><content>
-<p><a href=https://developer.mozilla.org/en-US/docs/Web/CSS/line-height>Line height</a> is an important CSS property. I feel like either I&rsquo;m getting old or the system/browser default line height is just not good enough for most modern websites. When you&rsquo;re reading large walls of text, single-line spacing can get pretty fatiguing quite fast. MDN specifically has an &ldquo;Accessibility Concerns&rdquo; section on its line-height documentation, stating:</p><blockquote>
-<p><em>Use a minimum value of 1.5 for line-height for main paragraph content. This will help people experiencing low vision conditions, as well as people with cognitive concerns such as Dyslexia. <strong>If the page is zoomed to increase the text size, using a unitless value ensures that the line height will scale proportionately.</strong></em></p></blockquote><p>The second sentence here is one that s really important. <a href=https://github.com/RonitRay/personalwebsite/commit/05f012f89fbb1b54160629b69e7e6c33d7b349d2#diff-36e64f19f57a05c8cd5b6bf7eff72703b4bbab19def7832eb4e686e7fa482eef>On early versions of this site, even early this month</a>, I had kept the line height as &ldquo;1.5em&rdquo;. Now, relative units (em/rem) are well and good and have their place in web design. In fact, I continue to use them for setting font-size on this site, for example. And logically, there&rsquo;s no reason for 1.5em to not work in line spacing. It means you want the site to render lines spaced out at 1.5x whatever the system&rsquo;s default line spacing setting. Or at least, it should mean that, but CSS is odd. For whatever reason, the line height property doesn&rsquo;t seem to inherit parent values very well, which means scaling them with multipliers and relative units doesn&rsquo;t get you the expected results. See the example below, also from MDN:</p><p><img src=/img/cssunitcomparison.png alt="Comparison of HTML pages using relative units and no units for line height. When no units are used, text that overflows or are longer than a single line on screen are rendered as expected with the defined line height. But when relative units are used, the line height value does not reflect, resulting in ugly vertically-conjoined text&amp;rsquo;"></p><p>I urge anyone writing their own CSS to remember not to use units when setting line height. In this context, it&rsquo;s worth mentioning txti. <a href=https://txti.es>Txti</a> is a great little service for hosting and sharing text-based pages quickly over the internet. It was created by <a href=http://barrytsmith.com/>Barry T. Smith</a>, and is a culmination of the series of motherfucking websites <a href=https://motherfuckingwebsite.com/>[1]</a> <a href=http://bettermotherfuckingwebsite.com/>[2]</a> <a href=https://thebestmotherfucking.website/>[3]</a> <a href=https://bestmotherfucking.website/>[4]</a> <a href=https://thebestmotherfuckingwebsite.co/>[5]</a>, which is both informative and hilarious.</p><p>Txti is great for anonymous blogs or public pastes. I love everything about it, except&mldr; it falls prey to the same line spacing issue that I did. It uses 1.5em line-spacing. Seriously, <a href="https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=txti.es&sort=byPopularity&type=story">have a look at any of the txti.es posts from HN</a>. From what I gather, Txti doesn&rsquo;t seem to be an open-source project so I can&rsquo;t submit a PR. I&rsquo;ve sent an email to Smith, but that&rsquo;s besides the point. What I&rsquo;m trying to say is, use unitless values for line height in CSS. Cheers.</p></content>
+</nav>
+</header>
+  <main>
+
+<h1>Don&#39;t Use Units for Line Height (Txti Please!)</h1>
 <p>
-</p></main><footer><hr>
-<i style=line-height:0>Copyright © 2020-2022, Ronit Ray.<br>
-<p>Licenses: CC BY-SA (content), MIT (code). <a href=/license>Read the license notice.</a></p>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo
-ʕ•ᴥ•ʔ Bear</a>
-</i></footer></body></html>
+  <i>
+    <time datetime='2021-03-25' pubdate>
+      2021-03-25
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height">Line height</a> is an important CSS property. I feel like either I&rsquo;m getting old or the system/browser default line height is just not good enough for most modern websites. When you&rsquo;re reading large walls of text, single-line spacing can get pretty fatiguing quite fast. MDN specifically has an &ldquo;Accessibility Concerns&rdquo; section on its line-height documentation, stating:</p>
+<blockquote>
+<p><em>Use a minimum value of 1.5 for line-height for main paragraph content. This will help people experiencing low vision conditions, as well as people with cognitive concerns such as Dyslexia. <strong>If the page is zoomed to increase the text size, using a unitless value ensures that the line height will scale proportionately.</strong></em></p>
+</blockquote>
+<p>The second sentence here is one that s really important. <a href="https://github.com/RonitRay/personalwebsite/commit/05f012f89fbb1b54160629b69e7e6c33d7b349d2#diff-36e64f19f57a05c8cd5b6bf7eff72703b4bbab19def7832eb4e686e7fa482eef">On early versions of this site, even early this month</a>, I had kept the line height as &ldquo;1.5em&rdquo;. Now, relative units (em/rem) are well and good and have their place in web design. In fact, I continue to use them for setting font-size on this site, for example. And logically, there&rsquo;s no reason for 1.5em to not work in line spacing. It means you want the site to render lines spaced out at 1.5x whatever the system&rsquo;s default line spacing setting. Or at least, it should mean that, but CSS is odd. For whatever reason, the line height property doesn&rsquo;t seem to inherit parent values very well, which means scaling them with multipliers and relative units doesn&rsquo;t get you the expected results. See the example below, also from MDN:</p>
+<p><img src="/img/cssunitcomparison.png" alt="Comparison of HTML pages using relative units and no units for line height. When no units are used, text that overflows or are longer than a single line on screen are rendered as expected with the defined line height. But when relative units are used, the line height value does not reflect, resulting in ugly vertically-conjoined text&amp;rsquo;"></p>
+<p>I urge anyone writing their own CSS to remember not to use units when setting line height. In this context, it&rsquo;s worth mentioning txti. <a href="https://txti.es">Txti</a> is a great little service for hosting and sharing text-based pages quickly over the internet. It was created by <a href="http://barrytsmith.com/">Barry T. Smith</a>, and is a culmination of the series of motherfucking websites <a href="https://motherfuckingwebsite.com/">[1]</a> <a href="http://bettermotherfuckingwebsite.com/">[2]</a> <a href="https://thebestmotherfucking.website/">[3]</a> <a href="https://bestmotherfucking.website/">[4]</a> <a href="https://thebestmotherfuckingwebsite.co/">[5]</a>, which is both informative and hilarious.</p>
+<p>Txti is great for anonymous blogs or public pastes. I love everything about it, except&hellip; it falls prey to the same line spacing issue that I did. It uses 1.5em line-spacing. Seriously, <a href="https://hn.algolia.com/?dateRange=all&amp;page=0&amp;prefix=true&amp;query=txti.es&amp;sort=byPopularity&amp;type=story">have a look at any of the txti.es posts from HN</a>. From what I gather, Txti doesn&rsquo;t seem to be an open-source project so I can&rsquo;t submit a PR. I&rsquo;ve sent an email to Smith, but that&rsquo;s besides the point. What I&rsquo;m trying to say is, use unitless values for line height in CSS. Cheers.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>
