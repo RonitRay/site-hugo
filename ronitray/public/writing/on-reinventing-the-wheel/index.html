@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>On Reinventing the Wheel | Ronit Ray</title>
+<meta name="title" content="On Reinventing the Wheel" />
+<meta name="description" content="Or, why I did what I did with this site" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="On Reinventing the Wheel" />
+<meta property="og:description" content="Or, why I did what I did with this site" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/on-reinventing-the-wheel/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2020-11-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-30T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="On Reinventing the Wheel"/>
+<meta name="twitter:description" content="Or, why I did what I did with this site"/>
+
+
+
+<meta itemprop="name" content="On Reinventing the Wheel">
+<meta itemprop="description" content="Or, why I did what I did with this site"><meta itemprop="datePublished" content="2020-11-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="981"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
+</a>
+<nav>
+</nav>
+</header>
+  <main>
+
+<h1>On Reinventing the Wheel</h1>
+<p>
+  <i>
+    <time datetime='2020-11-30' pubdate>
+      2020-11-30
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><a href="https://news.ycombinator.com/item?id=25227181">On an interesting thread in HN today</a>, there was much discussion on the idea of reinventing the wheel in software projects and writing one&rsquo;s own static site generators. As someone fresh out of college where reinventing the wheel is not only encouraged but mandated in several areas to learn concepts, and also as someone who has &ldquo;written&rdquo; their own &ldquo;static site generator&rdquo;, I feel like it&rsquo;s worth exploring this a little.</p>
+<p>I&rsquo;ve had blogs in some shape or form before. Blogger, WordPress, Ghost, and more recently Jekyll, Hugo and Zola. On the surface they all produce a good enough output, and have a ton of features. I could have stuck to any of them and called it a day, I&rsquo;m sure the tens of thousands (?) of bloggers who do aren&rsquo;t particularly dissatisfied with their weapon of choice, mostly because they have bigger things to be concerned about, like the content. And yet, I&rsquo;m happier with my solution today than I ever was with any of these, and here&rsquo;s why:</p>
+<p>I&rsquo;ve found that for simple blogs, especially hobby projects, you don&rsquo;t really need a WYSIWYG editor or an elaborate design or all kinds of funky tools, plugins and features that established CMS tools provide. Hell, I believe most of them don&rsquo;t even need to load several hundred kilobytes to a few megabytes of JavaScript to the user for eye-candy/obscure features either. If you can serve a static page with some minimal styling for readability, it&rsquo;s incredibly lightweight, likely doesn&rsquo;t need a CDN to be served quickly to viewers, and is just good design in general. This is my argument for using a static site generator. But why your own?</p>
+<p>I&rsquo;ve found the Unix philosophy to be a nice guideline for a number of decisions in life. This is true for a blog workflow as well:</p>
+<ul>
+<li>
+<p><em>Let each component do one thing, and do it well</em>: Posts are text files, written entirely in a text editor. The static site generator exclusively takes the post content and turns it into HTML.</p>
+</li>
+<li>
+<p><em>Expect the output of every program to become the input to another</em>: Again, posts are text files. They can be fed into any template for any formatting for the final site. The outputted HTML can be viewed locally in a browser as a file, served on a local server for live refresh, and uploaded directly to GitHub/GitLab pages or your own site for hosting. Each component&rsquo;s involvement is only in one step of the process, and each component is designed to be replaceable should it stop working or should a better option present itself in the near future. For instance, I could use something other than Markdown for formatting text, something other than vim for editing, something other than Python (or indeed the entire generator) for building the site, and some other hosting provider for, well, for hosting it.</p>
+</li>
+</ul>
+<p>What these afford is simplicity- I get to know exactly what every step of my blog workflow does, and extensibility- if I want more features I can code them myself or seek assistance or contributions from the community. I prefer this minimal approach to the jack of all trades approach where the tool you use is already full of features you may never need, but they&rsquo;re there if you need them. This is why I wrote my own generator instead of using the several awesome ones available. There are merits to both approaches and I wouldn&rsquo;t be surprised that for commercial endeavours the established tools likely do the job better, are more reliable, and save time, effort, and money 90% of the time. And yet there are power users who swear by their own solution since they know it end-to-end and are not held back by arbitrary limitations of some other platform.</p>
+<p>I end this ramble with some quotes from the HN thread, with credit.</p>
+<p><a href="https://news.ycombinator.com/item?id=25249963">arpyzo&rsquo;s comment</a></p>
+<p><em>I completely understand the desire to build something practical that&rsquo;s your own.
+I just built a small web application framework that I can build some basic personal apps on top of. Just like the author&rsquo;s, it&rsquo;s &ldquo;shitty&rdquo;. It lacks features, doesn&rsquo;t handle edge cases, isn&rsquo;t particularly secure or performant.
+None of that matters. It&rsquo;s locked up behind HTTP authentication and it&rsquo;s for my use only. It has exactly the features I desire, and none that I don&rsquo;t. I understand it top to bottom. It was fun to write and extend. It serves my needs perfectly. I didn&rsquo;t have to fight with, or conform to someone else&rsquo;s notion of how software should be built.</em></p>
+<p><a href="https://news.ycombinator.com/item?id=25251110">411111111111111&rsquo;s comment</a></p>
+<p><em>&ldquo;don&rsquo;t reinvent the wheel&rdquo; is specifically for projects which other people will be forced to maintain.
+You can reinvent the wheel as many times you want. If you however do that at work, your colleagues and your replacement after you left the job likely won&rsquo;t think too kindly of you.</em></p>
+<p><a href="https://news.ycombinator.com/item?id=25250012">bogwog&rsquo;s comment</a></p>
+<p><em>I spent about a day migrating my personal site from grav to hugo, and the main takeaway I got from that experience is that both of these &ldquo;simple&rdquo; static site generators are ridiculously over-engineered.
+I could slap something together with a few lines of Make or Python that does exactly what I need, in an hour or two. I could even hook it up to AWS and have it update automatically.
+Doing all of that is less time consuming and requires less effort than reading through the grav or hugo documentation, installing and setting everything up, and troubleshooting the inevitable problems.
+The only issue I have is that doing front-end web development/design is not something I enjoy, so grav and hugo&rsquo;s existing library of themes is very convenient. Convenient enough to put up with the other annoyances.</em></p>
+<p><a href="https://news.ycombinator.com/item?id=25250648">JasonFruit&rsquo;s comment</a></p>
+<p><em>For me, the reason was simpler: it took less effort to write an SSG than it did to learn any existing one, and I got the fun of doing it.</em></p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>

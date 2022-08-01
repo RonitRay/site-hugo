@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>GoatCounter- Simple, Tracking-Free Analytics | Ronit Ray</title>
+<meta name="title" content="GoatCounter- Simple, Tracking-Free Analytics" />
+<meta name="description" content="Basic analytics, without any reliance on money-hungry ad networks, and without any tracking or privacy encroachment." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="GoatCounter- Simple, Tracking-Free Analytics" />
+<meta property="og:description" content="Basic analytics, without any reliance on money-hungry ad networks, and without any tracking or privacy encroachment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/goatcounter/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2021-05-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-09T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="GoatCounter- Simple, Tracking-Free Analytics"/>
+<meta name="twitter:description" content="Basic analytics, without any reliance on money-hungry ad networks, and without any tracking or privacy encroachment."/>
+
+
+
+<meta itemprop="name" content="GoatCounter- Simple, Tracking-Free Analytics">
+<meta itemprop="description" content="Basic analytics, without any reliance on money-hungry ad networks, and without any tracking or privacy encroachment."><meta itemprop="datePublished" content="2021-05-09T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-05-09T00:00:00+00:00" />
+<meta itemprop="wordCount" content="574"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
+</a>
+<nav>
+</nav>
+</header>
+  <main>
+
+<h1>GoatCounter- Simple, Tracking-Free Analytics</h1>
+<p>
+  <i>
+    <time datetime='2021-05-09' pubdate>
+      2021-05-09
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>I like the idea of analytics. I don&rsquo;t think it&rsquo;s a bad thing to know which posts of yours are getting traction, what your readers would like to read, and so on. I am, however, staunchly pro-privacy. I will not stand for any analytics or telemetry:</p>
+<ol>
+<li>whose purpose goes beyond introspection</li>
+<li>which is used for collecting personally identifiable information</li>
+<li>which is used to profile users</li>
+<li>which is used to drive ad networks or sell collected data</li>
+<li>which is heavy and increases the size (and therefore the loading time) of a website.</li>
+</ol>
+<p>This, for obvious reasons, rules out the likes of some of the most popular analytics tools like Google and Facebook Analytics. I like the idea of analytics, but refuse to sell my soul or the visitors on my website for it. Thankfully, I don&rsquo;t have to.</p>
+<p><a href="https://goatcounter.com/">GoatCounter</a> is a great minimal, <a href="https://github.com/zgoat/goatcounter/">open-source</a> web analytics tool. It collects a minimal amount of data and does not link it to identities of users in any way. One of their <a href="https://www.goatcounter.com/why">stated goals</a> is to <em>just “count events” rather than “get as much data as technically possible”</em> which works for me.</p>
+<p>Like Google Analytics and many top providers, GoatCounter can be integrated with your site using a single line of JavaScript. This adds about 3.5kB of extra data to every page, which is fairly small. However, one of my goals for this site was to completely forgo JavaScript, or at least hold off on using it unless absolutely necessary. I don&rsquo;t believe analytics is a good enough reason to serve JavaScript, and would perhaps have reconsidered using Goat if that was the only option. Thankfully, it is not. They allow:</p>
+<ol>
+<li>Sending data from server logfiles- A viable option if you are self-hosting or using a VPS, but I am not.</li>
+<li>API requests from middleware or app backend.</li>
+<li>Tracking Pixel- This is what I use. A 1x1 GIF added to every page that works without JavaScript. It is a leaner solution too, since it adds less than 500 bytes (yes, bytes) to each page. That is a 85% load reduction to something that was already a very small size. The way this works is with an image tag:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://[USERNAME].goatcounter.com/count?p=/[PAGE_NAME]&#34;</span>&gt;;
+</span></span></code></pre></div><p>Where <code>[USERNAME]</code> is your GoatCounter username and <code>[PAGE_NAME]</code> is the name of your page that will show up on your analytics dashboard.</p>
+<p>I want to be very transparent with this, so this is all the data GoatCounter collects for me:</p>
+<ol>
+<li>User Agent: To see which browser and/or devices people access the site from</li>
+<li>Country and Region: Just to get an idea of the demographic makeup of my audience</li>
+<li>Session: Only to eliminate duplicate pageviews. The cited example on their site is: <em>Track unique visitors for up to 8 hours; if you disable this then someone pressing e.g. F5 to reload the page will just show as 2 pageviews instead of 1</em></li>
+</ol>
+<p>If this is still too invasive for you, you are likely using an adblocker of some sort. I have noticed that most ad-blockers (uBlock Origin, Adguard, StevenBlack hosts list etc.) are tuned to block any requests to or content loaded from GoatCounter, so this will not be an issue for you. You can also block this manually using a hosts file, for example.</p>
+<p>Also in the interest of full transparency, I am opening up my analytics dashboard to the general public. You get to see all the data that I do, with no exceptions.</p>
+<p><a href="https://ronit.goatcounter.com">My GoatCounter Dashboard</a></p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>

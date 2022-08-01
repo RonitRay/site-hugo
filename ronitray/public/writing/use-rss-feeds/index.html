@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>Reclaim Control Over Your Content Consumption with RSS Feeds | Ronit Ray</title>
+<meta name="title" content="Reclaim Control Over Your Content Consumption with RSS Feeds" />
+<meta name="description" content="RSS feeds have been around forever, and remain as relevant today as they were years ago. They might be a way out of the social dillemma, and here&#39;s how you can start using them." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Reclaim Control Over Your Content Consumption with RSS Feeds" />
+<meta property="og:description" content="RSS feeds have been around forever, and remain as relevant today as they were years ago. They might be a way out of the social dillemma, and here&#39;s how you can start using them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/use-rss-feeds/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2021-02-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-09T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="Reclaim Control Over Your Content Consumption with RSS Feeds"/>
+<meta name="twitter:description" content="RSS feeds have been around forever, and remain as relevant today as they were years ago. They might be a way out of the social dillemma, and here&#39;s how you can start using them."/>
+
+
+
+<meta itemprop="name" content="Reclaim Control Over Your Content Consumption with RSS Feeds">
+<meta itemprop="description" content="RSS feeds have been around forever, and remain as relevant today as they were years ago. They might be a way out of the social dillemma, and here&#39;s how you can start using them."><meta itemprop="datePublished" content="2021-02-09T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-02-09T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1007"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
+</a>
+<nav>
+</nav>
+</header>
+  <main>
+
+<h1>Reclaim Control Over Your Content Consumption with RSS Feeds</h1>
+<p>
+  <i>
+    <time datetime='2021-02-09' pubdate>
+      2021-02-09
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>This is part 1 in a two-part series on RSS feeds.</p>
+<p>The early internet was, I believe, truly ahead of its time. We have a lot more eye candy and fancy functionality today, that&rsquo;s for sure, but some of the most enduring ideas at the foundation of the internet are just a little younger than the internet itself. One of these is the RSS feed. No
+matter what your site is, what content you post, or how it looks, an RSS feed is able to standardize its contents into a single XML file that can then be used to track updates, or what we have come to call &ldquo;follow&rdquo; you.</p>
+<p>My understanding is that RSS feed usage peaked during the peak of Google Reader in the mid-2000s. It seems to have all been downhill since then. Today, RSS has a small but faithful fanbase, and though it is seeing a silent resurgence by being the backend for podcasts, it has largely been
+relegated to oblivion. I feel like there are two major reasons to this.</p>
+<p>The first is that RSS being simple yet flexible means it affords a great deal of control to the site owner as well as the follower over how they want to follow and consume content. You can view the entire post without leaving your feed reader, or can see a short summary and then jump straight to the site to read the rest of the post. This freedom and control is antithetical to the foundation of modern social networks, which rely heavily on addictive patterns and engaging UX shenanigans to keep you immersed and engaged on the platform for as long as possible. They need you to let them curate what you see, and to keep scrolling so they can serve you ads and make money off you. It was never about the content, or at least it hasn&rsquo;t been for a while and is likely never going to be
+unless the economic structures underlying these systems are overhauled completely.</p>
+<p>The second, less controversial reason is that the web is just a lot more diverse than it was before. It can be hard to reduce an entire website to a single feed of updates, although it really shouldn&rsquo;t be and this feels like a design flaw that can be remedied today itself. It is of course worth making a distinction between the &ldquo;document web&rdquo;- your news sites, blogs, personal websites, job listings, classifieds and so on- and the &ldquo;application web&rdquo;- intensive, interactive applications that aren&rsquo;t just read-only and typically require user input. The application web certainly has a place in the online landscape, but the document web undoubtedly deserves to be simpler to browse and access.</p>
+<p>If you want to escape the social dillemma and regain control over your consumption habits, there is nothing better than RSS. Here&rsquo;s how you can get started.</p>
+<p><strong>Picking a client</strong></p>
+<p>You need a client to view RSS feeds, and there are some great options out there for any platform of your choice.</p>
+<p>Cross-platform: There&rsquo;s a lot of cross-platform RSS services that let you follow your news and subscriptions on any device of your choosing, and even sync reading history so you are always up to date and never see any redundant information. Of these, my recommendations are <a href="https://tt-rss.org/">TinyTinyRSS</a> or <a href="https://miniflux.app/">Miniflux</a> if you can self-host, or <a href="https://theoldreader.com/">TheOldReader</a>, <a href="https://bazqux.com/">BazQux</a>, <a href="https://feedly.com/">Feedly</a>, <a href="https://www.inoreader.com/">InoReader</a> and <a href="https://www.newsblur.com/">NewsBlur</a> otherwise. All very solid services.</p>
+<p>Desktop: For Windows, <a href="https://www.microsoft.com/en-us/p/newsflow/9nblggh58s5r?activetab=pivot:overviewtab">NewsFlow</a> seems to be a pretty good option. Mac users can use <a href="https://www.reederapp.com/">Reeder</a>, which is pretty popular. Linux users have quite a few options available to them. For a more traditional GUI experience, I recommend <a href="https://gitlab.com/news-flash/news_flash_gtk">NewsFlash</a>, <a href="https://lzone.de/liferea/">Liferea</a> or <a href="https://quiterss.org/">QuiteRSS</a>. However, terminal users will find a lot of value in <a href="https://newsboat.org/">newsboat</a> or <a href="https://github.com/skeeto/elfeed">elfeed</a> if you use emacs.</p>
+<p>Mobile: On Android, the best reader I have found is <a href="https://play.google.com/store/apps/details?id=net.frju.flym&amp;hl=en_US&amp;gl=US">Flym</a>. <a href="https://www.reederapp.com/">Reeder</a> (linked above for MacOS) has an iOS client as well. If you&rsquo;re using any cross-platform service, their app/PWA is likely to be good too, and some 3rd party clients also let you hook them up to these services to sync your reading history.</p>
+<p><strong>Finding RSS Feeds</strong></p>
+<p>Modern RSS readers and services have search inbuilt that will let you add several sources without having to context-switch. A lot of sites you go to will put the RSS feed up front, typically in a header/footer or on the front page. However, this may not be true for quite a few sites due to the declining influence of RSS on the modern web. Fear not; all is not lost. A number of sites just have so much content that they might not put up the RSS link in a noticeable spot, or might just leave it in the source but not advertise it at all. Several websites are built on modern content management systems that all provide RSS feeds, while others still follow standard web practices and can be scraped to create feeds. It is worth trying the following:</p>
+<ol>
+<li>Add a /feed, or /rss, or /rss.xml or /feed.rss to the URL and see if it returns an XML file.</li>
+<li>On desktop, view the source for the site&rsquo;s front page and Ctrl+F to search for the words &ldquo;feed&rdquo;. &ldquo;rss&rdquo;, or &ldquo;atom&rdquo;.</li>
+<li>For reddit, you can add a &ldquo;.rss&rdquo; to the URL for any subreddit to get a feed for it.</li>
+<li>HackerNews RSS feeds are available at <a href="https://hnrss.org">HNRSS</a></li>
+<li>Finally, you can use <a href="https://rssbox.herokuapp.com/">RSSBox</a>, <a href="https://rss.app/">rss.app</a>, or <a href="http://fetchrss.com/">FetchRSS</a> to generate feeds for a variety of sites, social networks, and other services. The likes of <a href="https://www.datorss.com/">dato.rss</a> are also pretty useful if you want to search for feeds.</li>
+</ol>
+<p><strong>Conclusion</strong></p>
+<p>By relying on social media and big tech to curate our feeds for us, we become subservient to them, and very willing to stay within the bubbles they create for us. You can use RSS to reclaim this control, curate your own feeds, and read on your own terms.</p>
+<p>PS: If you&rsquo;re running a site of your own, keep an eye out for my next post, where I highlight how you can add an RSS feed to your site.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>

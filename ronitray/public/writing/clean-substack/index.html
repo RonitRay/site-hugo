@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>Turn Substack articles into distraction-free blog posts in 60 seconds | Ronit Ray</title>
+<meta name="title" content="Turn Substack articles into distraction-free blog posts in 60 seconds" />
+<meta name="description" content="Substack is nice and all, but I like a clean reading experience. Here&#39;s how you can get the best of both worlds." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Turn Substack articles into distraction-free blog posts in 60 seconds" />
+<meta property="og:description" content="Substack is nice and all, but I like a clean reading experience. Here&#39;s how you can get the best of both worlds." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/clean-substack/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2021-09-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-12T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="Turn Substack articles into distraction-free blog posts in 60 seconds"/>
+<meta name="twitter:description" content="Substack is nice and all, but I like a clean reading experience. Here&#39;s how you can get the best of both worlds."/>
+
+
+
+<meta itemprop="name" content="Turn Substack articles into distraction-free blog posts in 60 seconds">
+<meta itemprop="description" content="Substack is nice and all, but I like a clean reading experience. Here&#39;s how you can get the best of both worlds."><meta itemprop="datePublished" content="2021-09-12T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-12T00:00:00+00:00" />
+<meta itemprop="wordCount" content="648"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
+</a>
+<nav>
+</nav>
+</header>
+  <main>
+
+<h1>Turn Substack articles into distraction-free blog posts in 60 seconds</h1>
+<p>
+  <i>
+    <time datetime='2021-09-12' pubdate>
+      2021-09-12
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Substack seems to be the new hotness for a variety of established as well as enthusiast writers and bloggers, and I understand the appeal. They seem to provide a fairly good monetization plan and have an easy enough process for even less technical people to get started.</p>
+<p>I have no interest in moving to Substack and have not bothered creating an account either. My experience with the site comes from having authors&rsquo; Substack links show up on HN or Reddit feeds. My understanding is authors have granular control over whether they want to put their entire body of work or just the latest N posts behind a paywall or at least a subscription. Substack&rsquo;s entire business model revolves around these subscriptions. As a result, on the vast majority of Substack pages, there are several calls to action carefully strewn to get you to subscribe. Some of these calls to action are:</p>
+<ol>
+<li>On the header</li>
+<li>After a couple of paragraphs of text in the post</li>
+<li>After a few more paragraphs of text</li>
+<li>Popups</li>
+<li>At the end of the article</li>
+<li>After the comments and before the footer</li>
+</ol>
+<p>and so on.</p>
+<p>These are not as egregious as some news sites, or as irritating as the antipatterns found on Medium.com. It also seems like Substack give authors some modicum of control over which, if any, of these that they want to display on their content, because not every Substack based site I have come across has all of them. It doesn&rsquo;t change two fundamental things about me, however:</p>
+<ol>
+<li>When I view a webpage, I want the content and nothing more. I want to be off the site when I am done.</li>
+<li>I am unlikely to subscribe to random Substack pages, and even if I were to, I would prefer using RSS and not their mechanism. I have enough tech smarts and agency to do that without having to be nagged repeatedly.</li>
+</ol>
+<p>If both of these apply to you as well, or if you came across <a href="/stackoverflow-faster">my post on cleaning up the average StackOverflow page</a> and are interested in applying these principles to other websites, you&rsquo;ve come to the right place.</p>
+<p>I have come up with a uBlock Origin cosmetic filter list that should do away with most random intrusive content on Substack pages and leave only the content you came for. The below steps assume you are using a supported browser (Firefox, Chrome, or Chromium derivatives like Brave, Edge, Vivaldi, Opera), and have installed uBlock Origin already.</p>
+<ol>
+<li>After installing uBlock, click on the settings icon <img src="/img/ublock_settings.png" alt="The icon for settings in uBlock Origin"></li>
+<li>In the tab that opens, click on My Filters on the top bar.</li>
+<li>Add the following lines to the text box:
+<pre tabindex="0"><code>! 2021-07-27 https://substack.com
+substack.com###nojs-banner
+substack.com##.subscribe-btn.subscribe-cta.primary.button
+substack.com##.notification-container.menu-button.button &gt; svg
+substack.com##.footer
+substack.com##.subscribe-footer
+substack.com##div.single-post-section:nth-of-type(3)
+substack.com##div.single-post-section:nth-of-type(2)
+substack.com##.page-nav
+substack.com##[href^=&#34;/subscribe&#34;] &gt; .subscribe-btn.primary.button
+substack.com##td.icon.post-meta-item:nth-of-type(1)
+substack.com##div.subscribe-widget:nth-of-type(3)
+substack.com##div.subscribe-widget &gt; .form &gt; .sideBySideWrap &gt; input
+substack.com##div.subscribe-widget &gt; .form &gt; .sideBySideWrap
+substack.com##td.icon.post-meta-item:nth-of-type(2)
+substack.com##td.icon.post-meta-item:nth-of-type(3)
+</code></pre></li>
+<li>Click on &lsquo;Apply Changes&rsquo;, close the tab and try opening any Substack page.</li>
+</ol>
+<p>Welcome to clean textual goodness, the way God intended it.</p>
+<h2 id="notes">Notes:</h2>
+<ol>
+<li>This isn&rsquo;t some kind of hack that suddenly enables you to bypass paywalls and view restricted content for free. It only cleans up pages that are already available to you.</li>
+<li>These rules apply only to Substack.com and author.substack.com kind of subdomains. However, a number of authors use Substack on their custom domains, so you might need to add these rules to your filter list again, substituting substack.com for the relevant domain.</li>
+<li>Since Substack&rsquo;s business model is directly tied to subscriptions you make on the platform, these steps could be construed as attacking their income. And honestly, I&rsquo;m fine with that. If I come across a writer whose work I am inclined to support, I will go out of my way to seek appropriate channels to do that. And Substack can forget about my money as long as they keep platforming and making money from the likes of Graham Linehan.</li>
+</ol>
+<p>Ta.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>

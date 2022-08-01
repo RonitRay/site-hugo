@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://ronitray.xyz/images/favicon.png" />
+<title>Building a Sustainable Personal Wiki for Free | Ronit Ray</title>
+<meta name="title" content="Building a Sustainable Personal Wiki for Free" />
+<meta name="description" content="I like the idea of a personal wiki, but everything is expensive, over-engineered, or likely to disappear within 5 years. Here&#39;s how I navigate through this." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Building a Sustainable Personal Wiki for Free" />
+<meta property="og:description" content="I like the idea of a personal wiki, but everything is expensive, over-engineered, or likely to disappear within 5 years. Here&#39;s how I navigate through this." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ronitray.xyz/writing/personal-wiki/" /><meta property="og:image" content="https://ronitray.xyz/images/share.png"/><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2021-07-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-11T00:00:00+00:00" /><meta property="og:site_name" content="Ronit Ray" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ronitray.xyz/images/share.png"/>
+
+<meta name="twitter:title" content="Building a Sustainable Personal Wiki for Free"/>
+<meta name="twitter:description" content="I like the idea of a personal wiki, but everything is expensive, over-engineered, or likely to disappear within 5 years. Here&#39;s how I navigate through this."/>
+
+
+
+<meta itemprop="name" content="Building a Sustainable Personal Wiki for Free">
+<meta itemprop="description" content="I like the idea of a personal wiki, but everything is expensive, over-engineered, or likely to disappear within 5 years. Here&#39;s how I navigate through this."><meta itemprop="datePublished" content="2021-07-11T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-11T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2905"><meta itemprop="image" content="https://ronitray.xyz/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+
+  :root{
+    --accent-color: rgb(112, 229, 245);
+  }
+
+  body {
+    font-family: monospace;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent-color);
+  }
+
+  a, a:visited {
+     
+     
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+
+  .title {
+     
+    border-bottom: 1px solid var(--accent-color) !important;  
+    border: 0;    
+  }
+
+  .title span{
+    font-size: 1.4em;
+    font-weight: bold !important;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  pre code {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--accent-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title" style="border-bottom: 1px solid var(--accent-color)">
+  <span>Ronit Ray</span>
+</a>
+<nav>
+</nav>
+</header>
+  <main>
+
+<h1>Building a Sustainable Personal Wiki for Free</h1>
+<p>
+  <i>
+    <time datetime='2021-07-11' pubdate>
+      2021-07-11
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Order is beautiful. My mind is an absolute mess, and the idea of offloading some of it into a structured place that I may never revisit, but can if I want to, is extremely appealing to me at the moment. I&rsquo;ve also greatly been inspired by incredible public archives like <a href="https://wiki.nikitavoloboev.xyz/">Nikita Voloboev&rsquo;s</a> and <a href="https://rasulkireev.com/brain/">Rasul Kireev&rsquo;s</a>. I think they&rsquo;re incredible and would very much like to build a personal repository that will outlive me and might bring value to someone after I&rsquo;m gone. This is why I&rsquo;ve been thinking about having a knowledge base/personal wiki for a while.</p>
+<p>Personal wikis aren&rsquo;t exactly new, they&rsquo;ve been around for as long as the web has, if not longer. However, my understanding is that fancy new tools like Notion, Roam, Obsidian etc. have caused a giant uptick in adoption for this habit over the last couple of years. It&rsquo;s hard to navigate YouTube without finding productivity channels talking about their &ldquo;life OS&rdquo; or &ldquo;second brain&rdquo; built on top of Notion nowadays. And I&rsquo;m all for it.</p>
+<h2 id="i-dont-want-to-use-notion-though">I don&rsquo;t want to use Notion, though.</h2>
+<p>It&rsquo;s not that it isn&rsquo;t good, it&rsquo;s pretty great and people who call it a glorified text editor will have to jump through many hoops to name something that brings in the stuff that Notion does on top of basic Markdown. That said, I don&rsquo;t need most of those things, <a href="/notes-workflow">plain text is perfectly good for me</a>.</p>
+<p>Notion is free for personal use now, pretty good looking, easy to use, extensible, and all the other things their marketing department and army of promoters can tell you. That said, I just don&rsquo;t feel like it is for me. <a href="https://www.notion.so/Terms-and-Privacy-28ffdd083dc3473e9c2da6ec011b58ac">Their TOS and Privacy Policy</a> are pretty transparent about the fact that privacy isn&rsquo;t exactly their priority. That&rsquo;s fine, it&rsquo;s their prerogative to prioritize functionality and the ability to make the platform free for so many users. It&rsquo;s just a trade-off I am not willing to make.</p>
+<p>Further, because Notion adds a whole lot of functionality over basic text or rich(er) text like Markdown, it&rsquo;s all too easy to get tied down and locked into the platform. To their credit, they allow <a href="https://www.notion.so/Back-up-your-data-1a8eb5bdfce34d19a6360fd015c0075f">export to HTML, Markdown, or PDF</a>, but you would lose out on the fancy bits that aren&rsquo;t directly compatible. You could just not use them and maintain a discipline to treat it as just a plaintext platform, but it&rsquo;s not easy to resist the charm, especially when it may actually be easier to use some of it than have to work around the limitations of just text files.</p>
+<p>The other problem here is that it seems their export functionality doesn&rsquo;t work very well. As seen in <a href="https://news.ycombinator.com/item?id=27612894">this HN post</a> and the <a href="https://news.ycombinator.com/item?id=27613632">follow-up from Notion&rsquo;s CEO</a>, their export feature doesn&rsquo;t work at scale. And a personal wiki is likely to scale pretty quickly if you&rsquo;re diligently adding entries to it over a few years. I don&rsquo;t want to be locked in. I don&rsquo;t want to be reliant on a completely online service to have to do something as simple as writing. And I don&rsquo;t want to have to trust some random company to store my data or to <em>not</em> do something not to my taste or outright malicious with it.</p>
+<p>So where do I go?</p>
+<h2 id="my-requirements">My requirements</h2>
+<p>I&rsquo;m not very picky, but here&rsquo;s what I need.</p>
+<ol>
+<li>Free (libre), as in beer: I&rsquo;m not above paying for something that brings great utility to my life and work, but I&rsquo;m strapped for cash at the moment, and I would much rather use something that provides 90% of the utility for free than something else which offers spit and polish and marginal extra utility for a subscription or a lump sum price.</li>
+<li>Preferably free, as in freedom: I like free software. I like what it stands for, I like what it can be and I like what the world could be if it was the default. I may not be qualified or interested in reading, understanding, and auditing the code for every FOSS tool that I use, but the social contract of the dev putting it out in the open, and the prospect of a community of which at least a subset might actually be both interested and capable of doing this means, at least in my opinion, that free software will always be superior to proprietary competitors.</li>
+<li>Plain text or Markdown support: Plain text stands the test of time. A whole lot of things could render your personal wiki inaccessible or unusable, but Unicode or ASCII going out of fashion or support is highly unlikely, or at least unlikely enough to be a gamble I am willing to take. Even if the tool of choice for viewing, editing, and searching the wiki goes out of support or disappears off the face of the earth, I can read, edit, understand and manipulate plain text just fine.</li>
+<li>Sustainable: I should be controlling the data. This boils down to me having access to the files upon which the wiki is built. I should be able to back up, transfer, delete or do whatever I want with these files freely.</li>
+<li>Relatively frictionless: I&rsquo;m just going to be using it less and less if it&rsquo;s slow to start up or involves navigating a bunch of menus every time I have to capture a simple idea.</li>
+<li>Preferably cross-platform or easily shareable: I want to be able to edit or at least view the wiki from my phone, or share a relevant page with someone easily.</li>
+</ol>
+<p>I think this isn&rsquo;t too much to ask for. I&rsquo;ve basically been doing this with a folder structure and markdown files for personal notes anyway, but elevating that to a Wiki might take just a little more work.</p>
+<h2 id="my-options">My Options</h2>
+<p>Let&rsquo;s review some of the popular options in the wikispace and see how they fare against my metrics.</p>
+<h3 id="notion-36">Notion (3/6)</h3>
+<p>Notion isn&rsquo;t really a dedicated personal wiki tool, but it very much finds application there. It actually fared better than I expected. Notion is pretty frictionless (once you get past the trap of continuously optimizing your templates for MAXIMUM PRODUCTIVITY(TM)). It is a web app, so works on anything that is relatively modern. It is now free for personal use, but wasn&rsquo;t always, and there aren&rsquo;t any guarantees that it is always going to be. I&rsquo;ve already decided against it so there isn&rsquo;t much more to talk about here.</p>
+<p><img src="/img/notion.webp" alt="Screenshot of a personal wiki template for Notion">
+[Image courtesy of notionpages.com]</p>
+<p><a href="https://notion.so">Check out Notion here!</a></p>
+<h3 id="obsidian-35-to-56">Obsidian (3.5 to 5/6)</h3>
+<p>Obsidian is probably really close to what I want because it is a dedicated knowledge base tool. It&rsquo;s great for privacy and control because it works on a local folder of Markdown files. It has some really beautiful power features and it allows for networked/linked visualization that is attractive and probably very useful too. It is cross-platform, and free for personal use without any major caveats. However, it is proprietary software, and costs $8/month/site, soon to become $16/month/site to publish your wiki to the web. Still pretty darn fantastic, I would say.</p>
+<p><img src="/img/obsidian.webp" alt="Screenshot of an Obsidian screen">
+[Image courtesy of Obsidian&rsquo;s homepage]</p>
+<p><a href="https://obsidian.md/">Check out Obsidian here!</a></p>
+<h3 id="mediawiki-46">MediaWiki (4/6)</h3>
+<p>MediaWiki is an incredibly robust piece of software, but it really isn&rsquo;t targeted at projects of a scale as small as my personal wiki. Everything about it screams the fact that it is aiming for large Wikipedia or project wiki style projects, with collaboration and many other great features. It is  completely free software released under GPLv2 and is designed to run on a server I own and maintain myself, so sustainability is a check mark too. My main issues with it are:</p>
+<ol>
+<li>It&rsquo;s super over-engineered for what I need. I don&rsquo;t need (yet) or want to use a local web server or VPS (it&rsquo;s not really free of cost then, is it?). I don&rsquo;t think my wiki will be of the scale that it will ever need to run on a database.</li>
+<li>I&rsquo;d have to learn their markup which is fine and would probably pay off if I stuck to it, but again it adds to friction.</li>
+<li>While the end product is somewhat viewable on any web browser, it is a far cry from responsive. <a href="https://www.mediawiki.org/wiki/Manual:Mobiles,_tablets_and_responsive_design">Their own wiki</a> states that it is not at all optimized for mobile, but there are some workarounds that can make the experience a little more pleasant.</li>
+</ol>
+<p><img src="/img/mediawiki.webp" alt="Screenshot of the MediaWiki homepage"></p>
+<p>I just don&rsquo;t think it&rsquo;s a good fit for me.</p>
+<p><a href="https://www.mediawiki.org/wiki/MediaWiki">Check out MediaWiki here!</a></p>
+<h3 id="tiddlywiki-456">TiddlyWiki (4.5/6)</h3>
+<p>TiddlyWiki is fantastic. At first glance it ticks every box and should be the only thing I consider, and yet&hellip; very few things have boggled my mind as much as trying to understand it. It was incredibly overwhelming to wrap my head around it, and honestly I want something that gets out of my way rather than needing me to understand its intricacies and idiosyncrasies for a long time before getting any value out of it. Still, the scope of things that seem achievable with it is incredible, and it does seem to be capable of a perfect score if I toughen up and just get past the learning curve. It&rsquo;s a no, but only for now. We may yet have a wonderful time together.</p>
+<p><img src="/img/tiddly.webp" alt="Screenshot of a TiddlyWiki page"></p>
+<p><a href="https://tiddlywiki.com/">Check out TiddlyWiki here!</a></p>
+<h3 id="wikijs-456">Wiki.js (4.5/6)</h3>
+<p>It&rsquo;s about the same as MediaWiki in terms of metrics&hellip;Please don&rsquo;t make me have to maintain a database and a container and an application and a server/VPS for a pet project just yet.</p>
+<p><img src="/img/wikijs.webp" alt="Screenshot of a Wiki.js page"></p>
+<p><a href="https://js.wiki/">Check out Wiki.js here!</a></p>
+<h3 id="gitbook-4256">GitBook (4.25/6)</h3>
+<p>GitBook is a SaaS. I&rsquo;m not too keen on using something that can change the ToS on me. It&rsquo;s still good that it is based on markdown files that are super easy to shift elsewhere, but it&rsquo;s not exactly ideal to be at their mercy. At least with an executable you can use it as long as you have it, or downgrade to an old version if they introduce malicious elements or anti-features. Still, GitBook is one of the prettiest solutions I&rsquo;ve seen, and I won&rsquo;t lie and say I&rsquo;m not tempted.</p>
+<p><img src="/img/gitbook.webp" alt="Screenshot of a GitBook page">
+<a href="https://www.gitbook.com/">Check out GitBook here!</a></p>
+<h3 id="xwiki-56">XWiki (5/6)</h3>
+<p>Again, very good but not for me. Hosting, database, so on and so forth. XWiki is Java based too, which is a language and platform I am fairly comfortable with. But I&rsquo;ll give it a miss for now.</p>
+<p><img src="/img/xwiki.webp" alt="Screenshot of an XWiki page">
+<a href="https://www.xwiki.org/xwiki/bin/view/Main/WebHome">Check out XWiki here!</a></p>
+<h3 id="dokuwiki-56">DokuWiki (5/6)</h3>
+<p>This is another piece of software that really, really impressed me. Short of the fact that I don&rsquo;t want to self-host, it demolishes all of my criteria with flying colours. It&rsquo;s simple and seemingly great to use and navigate around. I had a great feeling reading their docs and can confidently say that if my present solution is ever inadequate and I find myself moving to a hosted solution, DokuWiki will most likely be at the top of my list of options to switch to, even ahead of TiddlyWiki due to sheer simplicity. Easily the best candidate so far, but I&rsquo;m tempted to explore a little bit more before I consider coughing up the money for a cheap VPS.</p>
+<p><img src="/img/dokuwiki.webp" alt="Screenshot of a DokuWiki page">
+<a href="https://www.dokuwiki.org/dokuwiki">Check out Dokuwiki here!</a></p>
+<h3 id="docusaurus-and-other-static-site-generator-based-solutions-556">Docusaurus and other static site generator-based solutions (5.5/6)</h3>
+<p>Docusaurus is a static site generator based on React, geared to churn out documentation-style webpages quickly. It&rsquo;s pretty good, I&rsquo;ve toyed with it at work, but even the few commands here and there add to the friction for me. You can find documentation-style templates for any static generator of your choice. My own site is on a static site generator, and for the few posts a month I think it&rsquo;s perfectly fine. But I expect to use and update my wiki more than that. Still, very solid.</p>
+<p><img src="/img/docusaurus.webp" alt="Algolia&amp;rsquo;s DocSearch, built with Docusaurus">
+<a href="https://docusaurus.io/">Check out Docusaurus here!</a></p>
+<p><a href="https://themes.gohugo.io/tags/docs/">Check out Hugo documentation templates here!</a></p>
+<p><a href="https://jekyllthemes.io/jekyll-documentation-themes">Check out Jekyll documentation templates here!</a></p>
+<h3 id="org-mode-56">Org-Mode (5/6)</h3>
+<p>I&rsquo;m not an emacs user. That alone is disqualifying for org mode, I think. I have been exposed to some great demonstrations on org-mode <a href="https://www.youtube.com/watch?v=oJTwQvgfgMM">1</a> <a href="https://www.youtube.com/watch?v=Ea_-TaEGa7Y">2</a> <a href="https://www.youtube.com/watch?v=SzA2YODtgK4">3</a>, so I have no illusions about the fact that it is an incredible tool. I actually spent a couple of months in emacs too, and enjoyed it. Part of this period was spent moving over my small notes database (poor choice of words, it was basically a bunch of text files) to org mode. While I enjoyed it, there was too much of it that I felt I didn&rsquo;t understand and had to memorize, and a whole lot of untapped potential as is the case with emacs in general. I&rsquo;ve never been exposed to Lisp, and don&rsquo;t have the time or, at the moment, the inclination to learn elisp to get things to work the way I want. For this reason I almost gave negative points to org mode in terms of &ldquo;friction&rdquo;, but settled on a 0. In another life, or perhaps in a few years&hellip; who knows.</p>
+<p><img src="/img/orgmode.webp" alt="A screenshot of org-wiki for org-mode in Emacs">
+<a href="https://orgmode.org/">Check out Org-Mode here!</a></p>
+<h3 id="vimwiki-46">VimWiki (4/6)</h3>
+<p>VimWiki is a newer project that aims to bring some of the org-mode like functionality to Vim, and it&rsquo;s pretty good. I&rsquo;m much more comfortable with vim, so I considered this seriously for a while. There are some issues, though.</p>
+<ol>
+<li>The markup is kind of messed up. I&rsquo;d have to learn it and use it for wiki entries while simultaneously using Markdown for writing posts on my site for example.</li>
+<li>The file structure sucks. At least when I used it, no matter the level of nesting of a particular document, everything was dumped in the root folder. Doesn&rsquo;t bode well if I have to move away from VimWiki in the future.</li>
+</ol>
+<p>It does have an (albeit rudimentary) export to HTML feature, which is not bad for shareability. But I was left underwhelmed by it.</p>
+<p><img src="/img/vimwiki.webp" alt="A screenshot of VimWiki">
+<a href="https://vimwiki.github.io/">Check out VimWiki here!</a></p>
+<h3 id="zim-66-winner-winner">Zim (6/6) WINNER WINNER!</h3>
+<p>I did it, I found it! And it is beautiful.</p>
+<p>My first exposure to Zim was a few years ago in <a href="https://www.youtube.com/watch?v=HFeW4Cj5k1s">Average Linux User&rsquo;s video about note-taking programs on Linux</a>. At the time it was a little at loggerheads with what I was looking for; I still maintain a different notes workflow because I want the private stuff to be encrypted and synced but not using a SaaS, and preferably not over the internet at all. However, it seems absolutely perfect for my wiki requirement.</p>
+<p><img src="/img/zim.webp" alt="A Zim wiki demo image"></p>
+<p>Zim is a remarkable little graphical editor that allows for hierarchical text/hybrid document storage. It&rsquo;s available on every major desktop platform, looks fair enough and is easy to get into. Even beyond the surface simplicity that is so attractive, there&rsquo;s a good deal of features that &ldquo;power users&rdquo; might want to make use of from time to time.</p>
+<p><a href="https://zim-wiki.org/">Show some love for Zim here.</a></p>
+<p>What I love:</p>
+<ol>
+<li>It&rsquo;s just simple.</li>
+<li>The WYSIWYG editor is pretty great, but it also supports Markdown and standard keybindings for bold, underline etc.</li>
+<li>The folder and file structure is sane.</li>
+<li>It isn&rsquo;t usable directly on phone, but there&rsquo;s nothing stopping me from syncing the folder using Syncthing and then editing the files using an editor of my choice.</li>
+<li>HTML export is there and it works great! It&rsquo;s pretty quick and simple, and while the default formatting is not responsive, it supports external templates. There are a <a href="https://github.com/jaap-karssenberg/zim-wiki/wiki/Templates">handful of templates available already</a>. I&rsquo;ve decided to use the <a href="https://github.com/jrm4/Eight-Five-Zero">Eight-Five-Zero</a> theme, but have removed useless (according to me) jQuery stuff, added a CSS rule to make code blocks play well with smaller screens, and fixed an issue with line height that I explained in some detail in <a href="/line-height-units-css">this post</a>.
+<ol>
+<li>Yes, the templating language is really simple, and you can just wrap it with good old HTML! <a href="https://github.com/RonitRay/Zim-Wiki-Template-850">Here&rsquo;s a link to my template</a></li>
+<li>Zim goes so far as to generate an index for all my content, which is just wonderful.</li>
+</ol>
+</li>
+</ol>
+<p>What I don&rsquo;t love:</p>
+<p>What&rsquo;s not to love? Zim is superb and everything I asked, and potentially could ever ask for. The only thing I can think might be a shortcoming compared to other items listed here is the fact that the web output cannot be searched, but the caveat is that it is served as static HTML that is simpler and much faster. I think I can take that deal. Besides, the actual tool has full-text search in it, it&rsquo;s just the web output which doesn&rsquo;t.</p>
+<h2 id="the-result">The Result</h2>
+<p>I&rsquo;m pleased to announce that I&rsquo;ve started my wiki on Zim, and I&rsquo;m really delighted so far. It works great for my use case.</p>
+<p><a href="https://wiki.ronitray.xyz/">My Personal Wiki!!</a></p>
+<p><img src="/img/wikiscreen.webp" alt="Screenshot of my wiki index."></p>
+<p>It&rsquo;s pretty scanty now, but I&rsquo;m hoping to make good use of it in the days and years to come. Overall, I&rsquo;m really pleased with my workflow and the result.</p>
+<h2 id="what-i-learned">What I Learned</h2>
+<p>It&rsquo;s still early days, so I don&rsquo;t know if maintaining an extensive and well-documented wiki is something that I will take to. That said, I&rsquo;m rather excited about it. I&rsquo;ve been very pleasantly surprised with the variety of options available to me. If one thing has impressed me so far in my search, it is how many of these are free and open-source. It&rsquo;s a solid refutation of the narrative that you need proprietary or commercial tools to get a job done well, and gives me a lot of hope. I am taking away this hope along with the confidence that I have no dearth of options to switch to if the present arrangement doesn&rsquo;t work out, and the expectation to be able to build the discipline and make something that is not just useful to me, but might also serve as a long-lasting repository of conventional and unconventional knowledge, available to anyone willing to seek it out. Until next time!</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<i style="line-height:0">Copyright © 2020-2022, Ronit Ray.<br>
+    <p>Licenses: CC BY-SA (content), MIT (code). <a href="/license">Read the license notice.</a></p>
+    Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo
+        ʕ•ᴥ•ʔ Bear</a>
+</i></footer>
+
+    
+</body>
+
+</html>
